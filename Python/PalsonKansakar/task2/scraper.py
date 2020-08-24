@@ -69,16 +69,6 @@ def main():
     to_json(sweather,fweather)
     to_yml(sweather,fweather)
     to_xml(sweather,fweather)
-    # def to_xml(row):
-    #     xml = ['<item>']
-    #     for field in row.index:
-    #         xml.append('  <field name="{0}">{1}</field>'.format(field, row[field]))
-    #     xml.append('</item>')
-    #     return '\n'.join(xml)
-    # with open('outputs/weather.xml', 'w') as f:
-    #     print('\n'.join(sweather.apply(to_xml, axis=1)), file=f)
-    # with open('outputs/fullweather.xml', 'w') as f:
-    #     print('\n'.join(fweather.apply(to_xml, axis=1)), file=f)
 
 
 if __name__ == "__main__":
