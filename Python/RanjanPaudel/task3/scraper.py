@@ -1,6 +1,5 @@
 import re
 import time
-import datetime
 import requests
 import argparse
 from bs4 import BeautifulSoup
@@ -53,6 +52,8 @@ def get_top_rated_list(table_rows):
     for tr in table_rows:
         title_column = tr.find('td', {'class': 'titleColumn'})
         rank_column = tr.find('td', {'class': 'ratingColumn imdbRating'})
+        if not (title_column and rank_column):
+            return
 
         title_texts = title_column.get_text(
             separator='_//\\_', strip=True).split('_//\\_')
@@ -77,6 +78,8 @@ def get_most_popular_list(table_rows):
     for tr in table_rows:
         title_column = tr.find('td', {'class': 'titleColumn'})
         rank_column = tr.find('td', {'class': 'ratingColumn imdbRating'})
+        if not (title_column and rank_column):
+            return
 
         title_texts = title_column.get_text(
             separator='_//\\_', strip=True).replace('\n', '_//\\_').split('_//\\_')
@@ -111,7 +114,16 @@ def get_most_popular_list(table_rows):
 
 def get_movie_list(soup, _type):
     table_body = soup.find('tbody', {'class': 'lister-list'})
+    if not table_body:
+        print(
+            f'Listing table not found in given URL: {imdb_base_url + search_map[_type]}.')
+        return
+
     table_rows = table_body.find_all('tr')
+    if not table_rows or len(table_rows) < 1:
+        print(
+            f'No table rows found in table lister-list.')
+        return
 
     if _type == 'top_rated_movies' or _type == 'top_rated_tv_shows':
         return get_top_rated_list(table_rows)
@@ -129,7 +141,6 @@ def store_in_files(data_list, list_type):
     fh.store_in_xml(data_list, f'./{list_type}/file.xml')
     print('    ** Writing YAML file...')
     fh.store_in_yaml(data_list, f'./{list_type}/file.yaml')
-    print('*** Done.')
 
 
 def store_in_sqlite(table_name, data_list):
@@ -154,11 +165,14 @@ def read_from_mysql(table_name):
 
 def request_and_get_soup(url):
     response_content = ''
+    try:
+        with requests.get(url=url) as req:
+            response_content = req.content
 
-    with requests.get(url=url) as req:
-        response_content = req.content
-
-    return BeautifulSoup(response_content, 'html.parser')
+        return BeautifulSoup(response_content, 'html.parser')
+    except BaseException as error:
+        print(f'Error connecting to URL {url}:\nError:\n{error}')
+        return
 
 
 def scrape_data(_type):
@@ -166,16 +180,41 @@ def scrape_data(_type):
     scrape_url = imdb_base_url + search_map[_type]
     print('*** Fetching list...')
     soup = request_and_get_soup(scrape_url)
+
+    if not soup:
+        return
+
     print('*** List fetched')
     movie_list = get_movie_list(soup, _type)
+
+    if not movie_list:
+        print(f'Could not generate {table_label_map[_type]} list.')
+        return
+
     print('*** Saving to files...')
-    store_in_files(movie_list, _type)
+    try:
+        store_in_files(movie_list, _type)
+    except BaseException as error:
+        print(f'Error writing in files: {error}\n')
+    else:
+        print('*** Done.')
+
     print('*** Storing in SQLite DB...')
-    store_in_sqlite(table_map[_type], movie_list)
-    print('*** Done.')
+    try:
+        store_in_sqlite(table_map[_type], movie_list)
+    except BaseException as error:
+        print(f'Error storing in SQLite: {error}\n')
+    else:
+        print('*** Done.')
+
     print('*** Storing in MySQL DB...')
-    store_in_mysql(table_map[_type], movie_list)
-    print('*** Done.')
+    try:
+        store_in_mysql(table_map[_type], movie_list)
+    except BaseException as error:
+        print(f'Error storing in MySQL: {error.orig}\n')
+    else:
+        print('*** Done.')
+
     # read_from_sqlite(table_map[_type])
     # read_from_mysql(table_map[_type])
 

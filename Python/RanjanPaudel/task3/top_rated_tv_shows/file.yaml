@@ -309,12 +309,12 @@ top_rated_tv_shows:
   title: Better Call Saul
 - imdb_rating: '8.7'
   rank: '78'
-  release_year: '2019'
-  title: Vinland Saga
-- imdb_rating: '8.7'
-  rank: '79'
   release_year: '1988'
   title: Mahabharat
+- imdb_rating: '8.7'
+  rank: '79'
+  release_year: '2019'
+  title: Vinland Saga
 - imdb_rating: '8.7'
   rank: '80'
   release_year: '2013'
@@ -681,12 +681,12 @@ top_rated_tv_shows:
   title: "Dragon Ball: Doragon b\xF4ru"
 - imdb_rating: '8.5'
   rank: '171'
-  release_year: '2010'
-  title: Justified
-- imdb_rating: '8.5'
-  rank: '172'
   release_year: '2001'
   title: Justice League
+- imdb_rating: '8.5'
+  rank: '172'
+  release_year: '2010'
+  title: Justified
 - imdb_rating: '8.5'
   rank: '173'
   release_year: '1995'
@@ -721,12 +721,12 @@ top_rated_tv_shows:
   title: "Samurai chanpur\xFB"
 - imdb_rating: '8.5'
   rank: '181'
-  release_year: '2011'
-  title: Shameless
-- imdb_rating: '8.5'
-  rank: '182'
   release_year: '2010'
   title: The Great British Bake Off
+- imdb_rating: '8.5'
+  rank: '182'
+  release_year: '2011'
+  title: Shameless
 - imdb_rating: '8.5'
   rank: '183'
   release_year: '1986'
@@ -765,12 +765,12 @@ top_rated_tv_shows:
   title: Mystery Science Theater 3000
 - imdb_rating: '8.5'
   rank: '192'
-  release_year: '2018'
-  title: Sacred Games
-- imdb_rating: '8.5'
-  rank: '193'
   release_year: '1990'
   title: Mr. Bean
+- imdb_rating: '8.5'
+  rank: '193'
+  release_year: '2018'
+  title: Sacred Games
 - imdb_rating: '8.5'
   rank: '194'
   release_year: '2018'
@@ -801,16 +801,16 @@ top_rated_tv_shows:
   title: Normal People
 - imdb_rating: '8.5'
   rank: '201'
+  release_year: '2016'
+  title: Letterkenny
+- imdb_rating: '8.5'
+  rank: '202'
   release_year: '2011'
   title: Impractical Jokers
 - imdb_rating: '8.5'
-  rank: '202'
+  rank: '203'
   release_year: '2008'
   title: Generation Kill
-- imdb_rating: '8.5'
-  rank: '203'
-  release_year: '2016'
-  title: Letterkenny
 - imdb_rating: '8.5'
   rank: '204'
   release_year: '2010'
@@ -997,5 +997,5 @@ top_rated_tv_shows:
   title: Romanzo criminale - La serie
 - imdb_rating: '8.4'
   rank: '250'
-  release_year: '2013'
-  title: "Unsere M\xFCtter, unsere V\xE4ter"
+  release_year: '2019'
+  title: The Family Man

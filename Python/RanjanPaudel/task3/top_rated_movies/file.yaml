@@ -985,12 +985,12 @@ top_rated_movies:
   title: The Terminator
 - imdb_rating: '8.0'
   rank: '247'
-  release_year: '1957'
-  title: "Kumonosu-j\xF4"
-- imdb_rating: '8.0'
-  rank: '248'
   release_year: '1997'
   title: "Shin seiki Evangelion Gekij\xF4-ban: Air/Magokoro wo, kimi ni"
+- imdb_rating: '8.0'
+  rank: '248'
+  release_year: '1957'
+  title: "Kumonosu-j\xF4"
 - imdb_rating: '8.0'
   rank: '249'
   release_year: '1994'

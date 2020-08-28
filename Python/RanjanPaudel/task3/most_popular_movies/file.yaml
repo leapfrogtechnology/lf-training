@@ -143,7 +143,7 @@ most_popular_movies:
   pre_position: '78'
   release_year: '2019'
   title: Une fille facile
-- imdb_rating: '6.2'
+- imdb_rating: '6.1'
   popularity: DECREASED
   position: '25'
   pre_position: '24'
@@ -311,7 +311,7 @@ most_popular_movies:
   pre_position: '18'
   release_year: '2020'
   title: After We Collided
-- imdb_rating: '8.2'
+- imdb_rating: '8.1'
   popularity: INCREASED
   position: '53'
   pre_position: '64'
