@@ -1,0 +1,1001 @@
+top_rated_tv_shows:
+- imdb_rating: '9.5'
+  rank: '1'
+  release_year: '2016'
+  title: Planet Earth II
+- imdb_rating: '9.4'
+  rank: '2'
+  release_year: '2006'
+  title: Planet Earth
+- imdb_rating: '9.4'
+  rank: '3'
+  release_year: '2001'
+  title: Band of Brothers
+- imdb_rating: '9.4'
+  rank: '4'
+  release_year: '2008'
+  title: Breaking Bad
+- imdb_rating: '9.4'
+  rank: '5'
+  release_year: '2019'
+  title: Chernobyl
+- imdb_rating: '9.3'
+  rank: '6'
+  release_year: '2002'
+  title: The Wire
+- imdb_rating: '9.3'
+  rank: '7'
+  release_year: '2017'
+  title: Blue Planet II
+- imdb_rating: '9.2'
+  rank: '8'
+  release_year: '2019'
+  title: Our Planet
+- imdb_rating: '9.2'
+  rank: '9'
+  release_year: '2014'
+  title: 'Cosmos: A Spacetime Odyssey'
+- imdb_rating: '9.2'
+  rank: '10'
+  release_year: '1980'
+  title: Cosmos
+- imdb_rating: '9.2'
+  rank: '11'
+  release_year: '2011'
+  title: Game of Thrones
+- imdb_rating: '9.2'
+  rank: '12'
+  release_year: '2005'
+  title: 'Avatar: The Last Airbender'
+- imdb_rating: '9.2'
+  rank: '13'
+  release_year: '2013'
+  title: Rick and Morty
+- imdb_rating: '9.2'
+  rank: '14'
+  release_year: '2020'
+  title: The Last Dance
+- imdb_rating: '9.2'
+  rank: '15'
+  release_year: '1999'
+  title: The Sopranos
+- imdb_rating: '9.1'
+  rank: '16'
+  release_year: '1973'
+  title: The World at War
+- imdb_rating: '9.1'
+  rank: '17'
+  release_year: '2009'
+  title: Life
+- imdb_rating: '9.1'
+  rank: '18'
+  release_year: '2009'
+  title: Hagane no renkinjutsushi
+- imdb_rating: '9.1'
+  rank: '19'
+  release_year: '2017'
+  title: The Vietnam War
+- imdb_rating: '9.1'
+  rank: '20'
+  release_year: '2010'
+  title: Sherlock
+- imdb_rating: '9.0'
+  rank: '21'
+  release_year: '1959'
+  title: The Twilight Zone
+- imdb_rating: '9.0'
+  rank: '22'
+  release_year: '1995'
+  title: The Beatles Anthology
+- imdb_rating: '9.0'
+  rank: '23'
+  release_year: '2011'
+  title: Human Planet
+- imdb_rating: '9.0'
+  rank: '24'
+  release_year: '2018'
+  title: Sahsiyet
+- imdb_rating: '9.0'
+  rank: '25'
+  release_year: '2001'
+  title: The Blue Planet
+- imdb_rating: '9.0'
+  rank: '26'
+  release_year: '1992'
+  title: 'Batman: The Animated Series'
+- imdb_rating: '9.0'
+  rank: '27'
+  release_year: '2011'
+  title: Frozen Planet
+- imdb_rating: '9.0'
+  rank: '28'
+  release_year: '2002'
+  title: Firefly
+- imdb_rating: '8.9'
+  rank: '29'
+  release_year: '1989'
+  title: Dekalog
+- imdb_rating: '8.9'
+  rank: '30'
+  release_year: '2014'
+  title: True Detective
+- imdb_rating: '8.9'
+  rank: '31'
+  release_year: '1990'
+  title: The Civil War
+- imdb_rating: '8.9'
+  rank: '32'
+  release_year: '2006'
+  title: "Death Note: Desu n\xF4to"
+- imdb_rating: '8.9'
+  rank: '33'
+  release_year: '2009'
+  title: "Apocalypse: La 2\xE8me guerre mondiale"
+- imdb_rating: '8.9'
+  rank: '34'
+  release_year: '2014'
+  title: Fargo
+- imdb_rating: '8.9'
+  rank: '35'
+  release_year: '1998'
+  title: "Kaub\xF4i bibappu"
+- imdb_rating: '8.9'
+  rank: '36'
+  release_year: '2013'
+  title: Africa
+- imdb_rating: '8.9'
+  rank: '37'
+  release_year: '2019'
+  title: When They See Us
+- imdb_rating: '8.9'
+  rank: '38'
+  release_year: '2014'
+  title: Last Week Tonight with John Oliver
+- imdb_rating: '8.9'
+  rank: '39'
+  release_year: '2015'
+  title: TVF Pitchers
+- imdb_rating: '8.9'
+  rank: '40'
+  release_year: '2011'
+  title: Hunter x Hunter
+- imdb_rating: '8.8'
+  rank: '41'
+  release_year: '1981'
+  title: Only Fools and Horses....
+- imdb_rating: '8.8'
+  rank: '42'
+  release_year: '2005'
+  title: The Office
+- imdb_rating: '8.8'
+  rank: '43'
+  release_year: '1994'
+  title: Friends
+- imdb_rating: '8.8'
+  rank: '44'
+  release_year: '1985'
+  title: Das Boot
+- imdb_rating: '8.8'
+  rank: '45'
+  release_year: '1969'
+  title: Monty Python's Flying Circus
+- imdb_rating: '8.8'
+  rank: '46'
+  release_year: '2012'
+  title: Gravity Falls
+- imdb_rating: '8.8'
+  rank: '47'
+  release_year: '1989'
+  title: Seinfeld
+- imdb_rating: '8.8'
+  rank: '48'
+  release_year: '1987'
+  title: Ramayan
+- imdb_rating: '8.8'
+  rank: '49'
+  release_year: '1995'
+  title: Pride and Prejudice
+- imdb_rating: '8.8'
+  rank: '50'
+  release_year: '2010'
+  title: How the Universe Works
+- imdb_rating: '8.8'
+  rank: '51'
+  release_year: '2011'
+  title: Black Mirror
+- imdb_rating: '8.8'
+  rank: '52'
+  release_year: '2013'
+  title: Nathan for You
+- imdb_rating: '8.8'
+  rank: '53'
+  release_year: '1990'
+  title: Twin Peaks
+- imdb_rating: '8.8'
+  rank: '54'
+  release_year: '2014'
+  title: Over the Garden Wall
+- imdb_rating: '8.8'
+  rank: '55'
+  release_year: '2015'
+  title: 'One Punch Man: Wanpanman'
+- imdb_rating: '8.8'
+  rank: '56'
+  release_year: '2015'
+  title: Narcos
+- imdb_rating: '8.7'
+  rank: '57'
+  release_year: '2017'
+  title: Dark
+- imdb_rating: '8.7'
+  rank: '58'
+  release_year: '2013'
+  title: Peaky Blinders
+- imdb_rating: '8.7'
+  rank: '59'
+  release_year: '1989'
+  title: Blackadder Goes Forth
+- imdb_rating: '8.7'
+  rank: '60'
+  release_year: '2013'
+  title: Shingeki no kyojin
+- imdb_rating: '8.7'
+  rank: '61'
+  release_year: '1999'
+  title: Freaks and Geeks
+- imdb_rating: '8.7'
+  rank: '62'
+  release_year: '1975'
+  title: Fawlty Towers
+- imdb_rating: '8.7'
+  rank: '63'
+  release_year: '2003'
+  title: Chappelle's Show
+- imdb_rating: '8.7'
+  rank: '64'
+  release_year: '2019'
+  title: Kota Factory
+- imdb_rating: '8.7'
+  rank: '65'
+  release_year: '2005'
+  title: It's Always Sunny in Philadelphia
+- imdb_rating: '8.7'
+  rank: '66'
+  release_year: '2016'
+  title: Stranger Things
+- imdb_rating: '8.7'
+  rank: '67'
+  release_year: '2017'
+  title: Senke nad Balkanom
+- imdb_rating: '8.7'
+  rank: '68'
+  release_year: '1989'
+  title: "Dragon Ball Z: Doragon b\xF4ru zetto"
+- imdb_rating: '8.7'
+  rank: '69'
+  release_year: '2003'
+  title: Arrested Development
+- imdb_rating: '8.7'
+  rank: '70'
+  release_year: '2005'
+  title: Rome
+- imdb_rating: '8.7'
+  rank: '71'
+  release_year: '1999'
+  title: The West Wing
+- imdb_rating: '8.7'
+  rank: '72'
+  release_year: '2011'
+  title: Steins;Gate
+- imdb_rating: '8.7'
+  rank: '73'
+  release_year: '2011'
+  title: Leyla ile Mecnun
+- imdb_rating: '8.7'
+  rank: '74'
+  release_year: '2007'
+  title: Vratice se rode
+- imdb_rating: '8.7'
+  rank: '75'
+  release_year: '1996'
+  title: Dragon Ball Z
+- imdb_rating: '8.7'
+  rank: '76'
+  release_year: '1997'
+  title: Oz
+- imdb_rating: '8.7'
+  rank: '77'
+  release_year: '2015'
+  title: Better Call Saul
+- imdb_rating: '8.7'
+  rank: '78'
+  release_year: '2019'
+  title: Vinland Saga
+- imdb_rating: '8.7'
+  rank: '79'
+  release_year: '1988'
+  title: Mahabharat
+- imdb_rating: '8.7'
+  rank: '80'
+  release_year: '2013'
+  title: House of Cards
+- imdb_rating: '8.7'
+  rank: '81'
+  release_year: '1976'
+  title: I, Claudius
+- imdb_rating: '8.7'
+  rank: '82'
+  release_year: '2018'
+  title: Cobra Kai
+- imdb_rating: '8.7'
+  rank: '83'
+  release_year: '2000'
+  title: Curb Your Enthusiasm
+- imdb_rating: '8.7'
+  rank: '84'
+  release_year: '2017'
+  title: The Marvelous Mrs. Maisel
+- imdb_rating: '8.7'
+  rank: '85'
+  release_year: '2016'
+  title: Fleabag
+- imdb_rating: '8.7'
+  rank: '86'
+  release_year: '2014'
+  title: BoJack Horseman
+- imdb_rating: '8.7'
+  rank: '87'
+  release_year: '2002'
+  title: Still Game
+- imdb_rating: '8.7'
+  rank: '88'
+  release_year: '2018'
+  title: One Strange Rock
+- imdb_rating: '8.7'
+  rank: '89'
+  release_year: '2004'
+  title: Sarabhai vs Sarabhai
+- imdb_rating: '8.7'
+  rank: '90'
+  release_year: '2019'
+  title: The Boys
+- imdb_rating: '8.7'
+  rank: '91'
+  release_year: '2004'
+  title: Justice League Unlimited
+- imdb_rating: '8.7'
+  rank: '92'
+  release_year: '1984'
+  title: The Adventures of Sherlock Holmes
+- imdb_rating: '8.7'
+  rank: '93'
+  release_year: '2001'
+  title: Six Feet Under
+- imdb_rating: '8.7'
+  rank: '94'
+  release_year: '2005'
+  title: The Thick of It
+- imdb_rating: '8.6'
+  rank: '95'
+  release_year: '2015'
+  title: 'The Jinx: The Life and Deaths of Robert Durst'
+- imdb_rating: '8.6'
+  rank: '96'
+  release_year: '1997'
+  title: South Park
+- imdb_rating: '8.6'
+  rank: '97'
+  release_year: '2019'
+  title: Yakusoku no Neverland
+- imdb_rating: '8.6'
+  rank: '98'
+  release_year: '2016'
+  title: Westworld
+- imdb_rating: '8.6'
+  rank: '99'
+  release_year: '2019'
+  title: 'Demon Slayer: Kimetsu No Yaiba'
+- imdb_rating: '8.6'
+  rank: '100'
+  release_year: '1989'
+  title: The Simpsons
+- imdb_rating: '8.6'
+  rank: '101'
+  release_year: '1986'
+  title: The Return of Sherlock Holmes
+- imdb_rating: '8.6'
+  rank: '102'
+  release_year: '2004'
+  title: House M.D.
+- imdb_rating: '8.6'
+  rank: '103'
+  release_year: '1999'
+  title: "One Piece: Wan p\xEEsu"
+- imdb_rating: '8.6'
+  rank: '104'
+  release_year: '2004'
+  title: Battlestar Galactica
+- imdb_rating: '8.6'
+  rank: '105'
+  release_year: '2018'
+  title: Yeh Meri Family
+- imdb_rating: '8.6'
+  rank: '106'
+  release_year: '2015'
+  title: Critical Role
+- imdb_rating: '8.6'
+  rank: '107'
+  release_year: '2016'
+  title: The Crown
+- imdb_rating: '8.6'
+  rank: '108'
+  release_year: '2002'
+  title: Top Gear
+- imdb_rating: '8.6'
+  rank: '109'
+  release_year: '2019'
+  title: The Mandalorian
+- imdb_rating: '8.6'
+  rank: '110'
+  release_year: '2002'
+  title: The Shield
+- imdb_rating: '8.6'
+  rank: '111'
+  release_year: '2016'
+  title: The Grand Tour
+- imdb_rating: '8.6'
+  rank: '112'
+  release_year: '2016'
+  title: This Is Us
+- imdb_rating: '8.6'
+  rank: '113'
+  release_year: '2018'
+  title: The Haunting of Hill House
+- imdb_rating: '8.6'
+  rank: '114'
+  release_year: '2010'
+  title: Downton Abbey
+- imdb_rating: '8.6'
+  rank: '115'
+  release_year: '1997'
+  title: "Kenp\xFB Denki Berserk"
+- imdb_rating: '8.6'
+  rank: '116'
+  release_year: '2015'
+  title: "Arany\xE9let"
+- imdb_rating: '8.6'
+  rank: '117'
+  release_year: '1989'
+  title: Lonesome Dove
+- imdb_rating: '8.6'
+  rank: '118'
+  release_year: '2004'
+  title: Deadwood
+- imdb_rating: '8.6'
+  rank: '119'
+  release_year: '2015'
+  title: Content Cop
+- imdb_rating: '8.6'
+  rank: '120'
+  release_year: '2011'
+  title: Bron/Broen
+- imdb_rating: '8.6'
+  rank: '121'
+  release_year: '2016'
+  title: Atlanta
+- imdb_rating: '8.6'
+  rank: '122'
+  release_year: '1987'
+  title: 'Star Trek: The Next Generation'
+- imdb_rating: '8.6'
+  rank: '123'
+  release_year: '1986'
+  title: Blackadder II
+- imdb_rating: '8.6'
+  rank: '124'
+  release_year: '2009'
+  title: Parks and Recreation
+- imdb_rating: '8.6'
+  rank: '125'
+  release_year: '2012'
+  title: Line of Duty
+- imdb_rating: '8.6'
+  rank: '126'
+  release_year: '1994'
+  title: The Memoirs of Sherlock Holmes
+- imdb_rating: '8.6'
+  rank: '127'
+  release_year: '1993'
+  title: The X Files
+- imdb_rating: '8.6'
+  rank: '128'
+  release_year: '1981'
+  title: 'Priklyucheniya Sherloka Kholmsa i doktora Vatsona: Sobaka Baskerviley'
+- imdb_rating: '8.6'
+  rank: '129'
+  release_year: '2003'
+  title: Battlestar Galactica
+- imdb_rating: '8.6'
+  rank: '130'
+  release_year: '2006'
+  title: "K\xF4do giasu - Hangyaku no rur\xFBshu: Code Geass - Lelouch of the Rebellion"
+- imdb_rating: '8.6'
+  rank: '131'
+  release_year: '2006'
+  title: Friday Night Lights
+- imdb_rating: '8.6'
+  rank: '132'
+  release_year: '2007'
+  title: Mad Men
+- imdb_rating: '8.6'
+  rank: '133'
+  release_year: '2009'
+  title: Archer
+- imdb_rating: '8.6'
+  rank: '134'
+  release_year: '2014'
+  title: 'Gomorra: La serie'
+- imdb_rating: '8.6'
+  rank: '135'
+  release_year: '1999'
+  title: 'Rurouni Kenshin: Meiji Kenkaku Romantan: Tsuioku Hen'
+- imdb_rating: '8.6'
+  rank: '136'
+  release_year: '1987'
+  title: Blackadder the Third
+- imdb_rating: '8.6'
+  rank: '137'
+  release_year: '2006'
+  title: Dexter
+- imdb_rating: '8.6'
+  rank: '138'
+  release_year: '2010'
+  title: Young Justice
+- imdb_rating: '8.6'
+  rank: '139'
+  release_year: '2010'
+  title: Through the Wormhole
+- imdb_rating: '8.6'
+  rank: '140'
+  release_year: '1968'
+  title: Mister Rogers' Neighborhood
+- imdb_rating: '8.6'
+  rank: '141'
+  release_year: '2017'
+  title: Mindhunter
+- imdb_rating: '8.6'
+  rank: '142'
+  release_year: '2003'
+  title: Peep Show
+- imdb_rating: '8.6'
+  rank: '143'
+  release_year: '1960'
+  title: The Bugs Bunny Show
+- imdb_rating: '8.6'
+  rank: '144'
+  release_year: '2015'
+  title: Daredevil
+- imdb_rating: '8.6'
+  rank: '145'
+  release_year: '2012'
+  title: The Eric Andre Show
+- imdb_rating: '8.6'
+  rank: '146'
+  release_year: '2019'
+  title: Sa-rang-eui bul-sa-chak
+- imdb_rating: '8.6'
+  rank: '147'
+  release_year: '2003'
+  title: QI
+- imdb_rating: '8.6'
+  rank: '148'
+  release_year: '2014'
+  title: Haikyuu!!
+- imdb_rating: '8.6'
+  rank: '149'
+  release_year: '2018'
+  title: Pew News
+- imdb_rating: '8.6'
+  rank: '150'
+  release_year: '1995'
+  title: Father Ted
+- imdb_rating: '8.6'
+  rank: '151'
+  release_year: '2019'
+  title: 'Formula 1: Drive to Survive'
+- imdb_rating: '8.6'
+  rank: '152'
+  release_year: '2004'
+  title: Long Way Round
+- imdb_rating: '8.6'
+  rank: '153'
+  release_year: '1977'
+  title: Mind Your Language
+- imdb_rating: '8.6'
+  rank: '154'
+  release_year: '2004'
+  title: North & South
+- imdb_rating: '8.6'
+  rank: '155'
+  release_year: '2017'
+  title: Anne
+- imdb_rating: '8.5'
+  rank: '156'
+  release_year: '2015'
+  title: Making a Murderer
+- imdb_rating: '8.5'
+  rank: '157'
+  release_year: '2015'
+  title: "Le Bureau des L\xE9gendes"
+- imdb_rating: '8.5'
+  rank: '158'
+  release_year: '1980'
+  title: Yes Minister
+- imdb_rating: '8.5'
+  rank: '159'
+  release_year: '2010'
+  title: "Behzat \xC7.: Bir Ankara Polisiyesi"
+- imdb_rating: '8.5'
+  rank: '160'
+  release_year: '2012'
+  title: The Newsroom
+- imdb_rating: '8.5'
+  rank: '161'
+  release_year: '2004'
+  title: Monster
+- imdb_rating: '8.5'
+  rank: '162'
+  release_year: '1999'
+  title: Spaced
+- imdb_rating: '8.5'
+  rank: '163'
+  release_year: '2014'
+  title: Umbre
+- imdb_rating: '8.5'
+  rank: '164'
+  release_year: '1998'
+  title: Ikinci Bahar
+- imdb_rating: '8.5'
+  rank: '165'
+  release_year: '2020'
+  title: Panchayat
+- imdb_rating: '8.5'
+  rank: '166'
+  release_year: '1972'
+  title: El Chavo del Ocho
+- imdb_rating: '8.5'
+  rank: '167'
+  release_year: '1997'
+  title: Brass Eye
+- imdb_rating: '8.5'
+  rank: '168'
+  release_year: '1989'
+  title: Poirot
+- imdb_rating: '8.5'
+  rank: '169'
+  release_year: '2015'
+  title: Skam
+- imdb_rating: '8.5'
+  rank: '170'
+  release_year: '1986'
+  title: "Dragon Ball: Doragon b\xF4ru"
+- imdb_rating: '8.5'
+  rank: '171'
+  release_year: '2010'
+  title: Justified
+- imdb_rating: '8.5'
+  rank: '172'
+  release_year: '2001'
+  title: Justice League
+- imdb_rating: '8.5'
+  rank: '173'
+  release_year: '1995'
+  title: Shin Seiki Evangelion
+- imdb_rating: '8.5'
+  rank: '174'
+  release_year: '2003'
+  title: Hagane no renkinjutsushi
+- imdb_rating: '8.5'
+  rank: '175'
+  release_year: '1998'
+  title: From the Earth to the Moon
+- imdb_rating: '8.5'
+  rank: '176'
+  release_year: '2010'
+  title: Adventure Time with Finn & Jake
+- imdb_rating: '8.5'
+  rank: '177'
+  release_year: '1995'
+  title: Dragon Ball
+- imdb_rating: '8.5'
+  rank: '178'
+  release_year: '2010'
+  title: Boardwalk Empire
+- imdb_rating: '8.5'
+  rank: '179'
+  release_year: '1968'
+  title: The Bugs Bunny/Road Runner Hour
+- imdb_rating: '8.5'
+  rank: '180'
+  release_year: '2004'
+  title: "Samurai chanpur\xFB"
+- imdb_rating: '8.5'
+  rank: '181'
+  release_year: '2011'
+  title: Shameless
+- imdb_rating: '8.5'
+  rank: '182'
+  release_year: '2010'
+  title: The Great British Bake Off
+- imdb_rating: '8.5'
+  rank: '183'
+  release_year: '1986'
+  title: Yes, Prime Minister
+- imdb_rating: '8.5'
+  rank: '184'
+  release_year: '2017'
+  title: Twin Peaks
+- imdb_rating: '8.5'
+  rank: '185'
+  release_year: '2005'
+  title: Doctor Who
+- imdb_rating: '8.5'
+  rank: '186'
+  release_year: '2007'
+  title: Flight of the Conchords
+- imdb_rating: '8.5'
+  rank: '187'
+  release_year: '2018'
+  title: Succession
+- imdb_rating: '8.5'
+  rank: '188'
+  release_year: '2019'
+  title: Love, Death & Robots
+- imdb_rating: '8.5'
+  rank: '189'
+  release_year: '2017'
+  title: 'Bose: Dead/Alive'
+- imdb_rating: '8.5'
+  rank: '190'
+  release_year: '2012'
+  title: The Untold History of the United States
+- imdb_rating: '8.5'
+  rank: '191'
+  release_year: '1988'
+  title: Mystery Science Theater 3000
+- imdb_rating: '8.5'
+  rank: '192'
+  release_year: '2018'
+  title: Sacred Games
+- imdb_rating: '8.5'
+  rank: '193'
+  release_year: '1990'
+  title: Mr. Bean
+- imdb_rating: '8.5'
+  rank: '194'
+  release_year: '2018'
+  title: Pose
+- imdb_rating: '8.5'
+  rank: '195'
+  release_year: '2012'
+  title: Satyamev Jayate
+- imdb_rating: '8.5'
+  rank: '196'
+  release_year: '2015'
+  title: Chef's Table
+- imdb_rating: '8.5'
+  rank: '197'
+  release_year: '2000'
+  title: Coupling
+- imdb_rating: '8.5'
+  rank: '198'
+  release_year: '2006'
+  title: The IT Crowd
+- imdb_rating: '8.5'
+  rank: '199'
+  release_year: '2017'
+  title: The Defiant Ones
+- imdb_rating: '8.5'
+  rank: '200'
+  release_year: '2020'
+  title: Normal People
+- imdb_rating: '8.5'
+  rank: '201'
+  release_year: '2011'
+  title: Impractical Jokers
+- imdb_rating: '8.5'
+  rank: '202'
+  release_year: '2008'
+  title: Generation Kill
+- imdb_rating: '8.5'
+  rank: '203'
+  release_year: '2016'
+  title: Letterkenny
+- imdb_rating: '8.5'
+  rank: '204'
+  release_year: '2010'
+  title: Louie
+- imdb_rating: '8.5'
+  rank: '205'
+  release_year: '2015'
+  title: Mr. Robot
+- imdb_rating: '8.5'
+  rank: '206'
+  release_year: '2012'
+  title: Endeavour
+- imdb_rating: '8.5'
+  rank: '207'
+  release_year: '1999'
+  title: GTO
+- imdb_rating: '8.5'
+  rank: '208'
+  release_year: '1955'
+  title: Alfred Hitchcock Presents
+- imdb_rating: '8.5'
+  rank: '209'
+  release_year: '2016'
+  title: The Night Of
+- imdb_rating: '8.5'
+  rank: '210'
+  release_year: '2014'
+  title: Detectorists
+- imdb_rating: '8.5'
+  rank: '211'
+  release_year: '2017'
+  title: Big Little Lies
+- imdb_rating: '8.5'
+  rank: '212'
+  release_year: '2014'
+  title: Silicon Valley
+- imdb_rating: '8.5'
+  rank: '213'
+  release_year: '1993'
+  title: 'Homicide: Life on the Street'
+- imdb_rating: '8.5'
+  rank: '214'
+  release_year: '1998'
+  title: Whose Line Is It Anyway?
+- imdb_rating: '8.5'
+  rank: '215'
+  release_year: '2007'
+  title: "Naruto: Shipp\xFBden"
+- imdb_rating: '8.5'
+  rank: '216'
+  release_year: '2011'
+  title: 'Spartacus: Gods of the Arena'
+- imdb_rating: '8.5'
+  rank: '217'
+  release_year: '2016'
+  title: Horace and Pete
+- imdb_rating: '8.5'
+  rank: '218'
+  release_year: '2013'
+  title: Hannibal
+- imdb_rating: '8.5'
+  rank: '219'
+  release_year: '2001'
+  title: The Office
+- imdb_rating: '8.5'
+  rank: '220'
+  release_year: '1997'
+  title: I'm Alan Partridge
+- imdb_rating: '8.5'
+  rank: '221'
+  release_year: '2016'
+  title: Mob Psycho 100
+- imdb_rating: '8.5'
+  rank: '222'
+  release_year: '2008'
+  title: Sons of Anarchy
+- imdb_rating: '8.5'
+  rank: '223'
+  release_year: '2008'
+  title: John Adams
+- imdb_rating: '8.5'
+  rank: '224'
+  release_year: '2016'
+  title: Boku dake ga inai machi
+- imdb_rating: '8.5'
+  rank: '225'
+  release_year: '2000'
+  title: Black Books
+- imdb_rating: '8.5'
+  rank: '226'
+  release_year: '2014'
+  title: Shigatsu wa kimi no uso
+- imdb_rating: '8.5'
+  rank: '227'
+  release_year: '1997'
+  title: The New Batman Adventures
+- imdb_rating: '8.5'
+  rank: '228'
+  release_year: '2017'
+  title: The Punisher
+- imdb_rating: '8.5'
+  rank: '229'
+  release_year: '2010'
+  title: 'Spartacus: Blood and Sand'
+- imdb_rating: '8.4'
+  rank: '230'
+  release_year: '2018'
+  title: L'amica geniale
+- imdb_rating: '8.4'
+  rank: '231'
+  release_year: '2009'
+  title: Ezel
+- imdb_rating: '8.4'
+  rank: '232'
+  release_year: '2008'
+  title: 'Clannad: After Story'
+- imdb_rating: '8.4'
+  rank: '233'
+  release_year: '2008'
+  title: Dr. Horrible's Sing-Along Blog
+- imdb_rating: '8.4'
+  rank: '234'
+  release_year: '2009'
+  title: Community
+- imdb_rating: '8.4'
+  rank: '235'
+  release_year: '2018'
+  title: Queer Eye
+- imdb_rating: '8.4'
+  rank: '236'
+  release_year: '2013'
+  title: Vikings
+- imdb_rating: '8.4'
+  rank: '237'
+  release_year: '2016'
+  title: 'Sseulsseulhago Chalranhashin: Dokkaebi'
+- imdb_rating: '8.4'
+  rank: '238'
+  release_year: '2018'
+  title: Hilda
+- imdb_rating: '8.4'
+  rank: '239'
+  release_year: '2003'
+  title: The Venture Bros.
+- imdb_rating: '8.4'
+  rank: '240'
+  release_year: '2017'
+  title: Feud
+- imdb_rating: '8.4'
+  rank: '241'
+  release_year: '2001'
+  title: Samurai Jack
+- imdb_rating: '8.4'
+  rank: '242'
+  release_year: '2014'
+  title: The Knick
+- imdb_rating: '8.4'
+  rank: '243'
+  release_year: '2019'
+  title: Delhi Crime
+- imdb_rating: '8.4'
+  rank: '244'
+  release_year: '2016'
+  title: "Boku no h\xEEr\xF4 akademia"
+- imdb_rating: '8.4'
+  rank: '245'
+  release_year: '2010'
+  title: Luther
+- imdb_rating: '8.4'
+  rank: '246'
+  release_year: '2014'
+  title: Inside No. 9
+- imdb_rating: '8.4'
+  rank: '247'
+  release_year: '2002'
+  title: "K\xF4kaku kid\xF4tai: Stand Alone Complex"
+- imdb_rating: '8.4'
+  rank: '248'
+  release_year: '1996'
+  title: "Rur\xF4ni Kenshin - Meiji kenkaku romantan"
+- imdb_rating: '8.4'
+  rank: '249'
+  release_year: '2008'
+  title: Romanzo criminale - La serie
+- imdb_rating: '8.4'
+  rank: '250'
+  release_year: '2013'
+  title: "Unsere M\xFCtter, unsere V\xE4ter"
