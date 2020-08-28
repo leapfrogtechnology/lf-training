@@ -7,7 +7,11 @@ import sqlite3
 import argparse
 import requests
 from bs4 import BeautifulSoup
+from multiprocessing import Pool
 import xml.etree.ElementTree as ET
+
+import sys
+sys.setrecursionlimit(25000)
 
 from db import saveProduct
 
@@ -18,23 +22,27 @@ DEFAULT_FILENAME = 'results'
 BASE_URL = 'https://hamrobazaar.com/'
 BASE_SEARCH_URL = BASE_URL + 'search.php'
 
+def mapTableData(table):
+    if table.find('td', attrs={'bgcolor':'#C6C6D9'}):
+        td_data = table.find_all('td', attrs={'bgcolor': '#F2F4F9'})
+        if not td_data:
+            # Alternating result background color
+            td_data = table.find_all('td', attrs={'bgcolor': '#ECF0F6'})
+        if td_data:
+            return td_data
 
 def get_search_result_rows(data, max=DEFAULT_MAX):
     ''' returns result items array '''
     rows = []
-    done = 0
     tables = data.find_all('table', attrs={'border':"0", 'width':"100%", 'cellspacing':"0", 'cellpadding':"0"})
-    for table in tables:
-        if table.find('td', attrs={'bgcolor':'#C6C6D9'}):
-            td_data = table.find_all('td', attrs={'bgcolor': '#F2F4F9'})
-            if not td_data:
-                # Alternating result background color
-                td_data = table.find_all('td', attrs={'bgcolor': '#ECF0F6'})
-            if td_data:
-                rows.append(td_data)
-                done += 1
-                if done >= max: break
-
+    with Pool(5) as p:
+        data = p.map(mapTableData, (table for table in tables))
+    for record in data:
+        if record and len(record) > 0:
+            rows.append(record)
+    if len(rows) >= max:
+        rows = rows[:max]
+        
     return rows
 
 
