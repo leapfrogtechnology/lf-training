@@ -60,7 +60,7 @@ def get_top_rated_list(table_rows):
 
         rank = title_texts[0].replace('.', '')
         title = title_texts[1]
-        year = re.sub("^\(|\)$", "", title_texts[2])
+        year = re.sub(r"^\(|\)$", "", title_texts[2])
         rating_text = rank_column.get_text(strip=True)
 
         movie_list.append({
@@ -85,10 +85,10 @@ def get_most_popular_list(table_rows):
             separator='_//\\_', strip=True).replace('\n', '_//\\_').split('_//\\_')
 
         title = title_texts[0]
-        year = re.sub("^\(|\)$", "", title_texts[1])
+        year = re.sub(r"^\(|\)$", "", title_texts[1])
         position = title_texts[2].replace(',', '')
         pre_position = re.sub(
-            "^\(|\)$", "", title_texts[len(title_texts) - 1]).replace(',', '')
+            r"^\(|\)$", "", title_texts[len(title_texts) - 1].strip()).replace(',', '')
         rating_text = rank_column.get_text(strip=True) or 'NOT RATED'
         popularity = ''
 
