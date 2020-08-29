@@ -1,4 +1,3 @@
-
 # Scraping Top 10 most watched movies/series from imdb
 import requests
 from bs4 import BeautifulSoup
