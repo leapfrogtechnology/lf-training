@@ -10,10 +10,10 @@ import itertools
 import requests
 from bs4 import BeautifulSoup
 
-from utils import CsvCreator, get_filepath_name, flatten_brand_as_key, format_price, build_db_format
-from db import create_table, store_data
+import utils
+import db
 from sqlitedb import store_in_sqlite
-from file_write import write_overall_result, write_to_csv, write_to_yaml, write_to_json
+import file_write
 
 inputfile = 'searchfile.csv'
 
@@ -36,26 +36,19 @@ def debug_html(html):
 def store_to_database(result):
     values = []
     search_terms = [(i,) for i in result.keys()]
-    store_data('search_term', search_terms)
+    db.store_data('search_term', search_terms)
     for key, contents in result.items():
         for x in contents.keys():
             for data_ in contents[x]:
-                data = format_price(data_)
-                values.append(build_db_format(data))
-    store_data('contents',values)
+                data = utils.format_price(data_)
+                values.append(utils.build_db_format(data))
+    db.store_data('contents',values)
 
 def scrape_product(soup):
     result_set = soup.find_all('script', type='application/ld+json')
     if not result_set and isinstance(result_set, list):
-        return {
-            "title": None,
-            "price": None,
-            "url_link": None,
-            "image_url": None,
-            "description": None,
-            "aggregateRating": None,
-            "brand": None
-        }
+        return None
+
     searched_result = json.loads(result_set[0].string)
 
     row = {}
@@ -98,11 +91,11 @@ def get_search_terms_from_file(inputfile):
             search_urls.append(result)  
         return search_urls
 
-def file_write(result):
+def write_to_different_formats(result):
     for brand, content in result.items():
-        write_to_csv(brand, content)
-        write_to_yaml(brand, content)
-        write_to_json(brand, content)
+        file_write.write_to_csv(brand, content)
+        file_write.write_to_yaml(brand, content)
+        file_write.write_to_json(brand, content)
 
 def scrape_search_terms(search_urls, timeout):
     products = {}
@@ -138,7 +131,7 @@ def scrape_search_results(products):
 
 if __name__ == "__main__":
     if not os.path.isfile(inputfile):
-        CsvCreator(inputfile, ['SearchTerm'])
+        utils.CsvCreator(inputfile, ['SearchTerm'])
         print('Input Your Search Terms for Daraz')
     
     search_urls = get_search_terms_from_file(inputfile)
@@ -154,18 +147,23 @@ if __name__ == "__main__":
             futures.append(executor.submit(scrape_search_results,product))
     print('Finished Scraping The Products')
     result = {}
+    no_result_set = []
     for future in concurrent.futures.as_completed(futures):
         try:
             with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-                create_table() #Initializes Connection To database once successful Network connection 
+                db.create_table() #Initializes Connection To database once successful Network connection 
                 product_contents = future.result()
                 for product, contents in product_contents.items():
-                    get_result = reduce(flatten_brand_as_key,contents, {})
+                    if not contents:
+                        no_result_set.append(product)
+                        continue #In no result donot append in the result
+                    get_result = reduce(utils.flatten_brand_as_key,contents, {})
                     result[product] = get_result
         except requests.ConnectTimeout:
             print("ConnectTimeout.")
 
-    write_overall_result(product_contents)
-    file_write(result)
+    file_write.write_empty_result_sets(no_result_set)
+    file_write.write_overall_result(product_contents)
+    write_to_different_formats(result)
     store_to_database(result)
     store_in_sqlite()
