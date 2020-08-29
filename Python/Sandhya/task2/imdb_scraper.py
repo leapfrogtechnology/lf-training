@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 from pandas import DataFrame
 import yaml
 
-
 URL = 'https://www.imdb.com/what-to-watch/popular/?ref_=hm_watch_pop'
 
 class StoreResult:
