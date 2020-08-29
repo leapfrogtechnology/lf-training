@@ -25,7 +25,7 @@ def request_and_get_soup(search_url, timeout=3):
         search_url = f"{DARAZ_SEARCH_URL}{search_url}" 
     response = requests.get(search_url, timeout=timeout)
     if not response.ok:
-        return
+        return None
 
     return BeautifulSoup(response.text, 'lxml')
 
@@ -45,8 +45,19 @@ def store_to_database(result):
     store_data('contents',values)
 
 def scrape_product(soup):
+    result_set = soup.find_all('script', type='application/ld+json')
+    if not result_set and isinstance(result_set, list):
+        return {
+            "title": "None",
+            "price": "None",
+            "url_link": "None",
+            "image_url": "None",
+            "description": "None",
+            "aggregateRating": "None",
+            "brand": "None"
+        }
+    searched_result = json.loads(result_set[0].string)
 
-    searched_result = json.loads(soup.find_all('script', type='application/ld+json')[0].string)
     row = {}
     try:
         row["title"] = soup.find('span', class_="breadcrumb_item_anchor breadcrumb_item_anchor_last").text
@@ -96,6 +107,7 @@ def file_write(result):
 def scrape_search_terms(search_urls, timeout):
     products = {}
     for search_term, search_url in search_urls.items():
+        print(f"Searching: {search_term}")
         soup = request_and_get_soup(search_url, timeout)
 
         if not soup:
@@ -109,15 +121,18 @@ def scrape_search_results(products):
     product_contents ={}
 
     for product, product_urls in products.items():
+        print(f"Scraping Product: {product}")
         info = []
-        for url in product_urls:
-            soup = request_and_get_soup(url)
-
+        with concurrent.futures.ThreadPoolExecutor(max_workers=7) as executor:
+            result_soups = executor.map(request_and_get_soup, product_urls)
+        
+        for soup in result_soups:
             if not soup:
                 return
-
-            info.append(scrape_product(soup))
-
+            result = scrape_product(soup)
+            if not result:
+                return None
+            info.append(result)
         product_contents[product] = info
     return product_contents
 
