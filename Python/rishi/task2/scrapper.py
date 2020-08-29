@@ -48,13 +48,13 @@ def scrape_product(soup):
     result_set = soup.find_all('script', type='application/ld+json')
     if not result_set and isinstance(result_set, list):
         return {
-            "title": "None",
-            "price": "None",
-            "url_link": "None",
-            "image_url": "None",
-            "description": "None",
-            "aggregateRating": "None",
-            "brand": "None"
+            "title": None,
+            "price": None,
+            "url_link": None,
+            "image_url": None,
+            "description": None,
+            "aggregateRating": None,
+            "brand": None
         }
     searched_result = json.loads(result_set[0].string)
 
