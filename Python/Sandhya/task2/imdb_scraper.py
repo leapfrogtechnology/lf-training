@@ -1,35 +1,40 @@
-# Scraping Top 10 most watched movies/series from imdb
+# Scraping popular, top picks and fan favourite movies/series from imdb
 import requests
 from bs4 import BeautifulSoup
 from pandas import DataFrame
 import yaml
+import os
 
-URL = 'https://www.imdb.com/what-to-watch/popular/?ref_=hm_watch_pop'
+URL = 'https://www.imdb.com/what-to-watch/'
+categories = ['popular','top-picks','fan-favorites']
 
 class StoreResult:
     
-    def csvFile(all_title_list, all_rating_list):
+    def csvFile(category, all_title_list, all_rating_list):
+        filename = os.path.join('output', category) + '.csv'
         df = DataFrame(data={'Title':all_title_list, 'Rating': all_rating_list})
-        df.to_csv('output/topmovies.csv', sep=',', index = False)
-        print('CSV file saved: topmovies.csv')
+        df.to_csv(filename, sep=',', index = False)
+        print('CSV file saved:',filename)
 
-    def jsonFile(all_title_list, all_rating_list):
+    def jsonFile(category, all_title_list, all_rating_list):
+        filename = os.path.join('output', category) + '.json'
         df = DataFrame(data={'Title':all_title_list, 'Rating': all_rating_list}, columns = ['Title', 'Rating'])
-        df.to_json('output/topmovies.json')
-        print('Json file saved: topmovies.json')
+        df.to_json(filename)
+        print('Json file saved:',filename)
 
-    def yamlFile(all_title_list, all_rating_list):
+    def yamlFile(category, all_title_list, all_rating_list):
+        filename = os.path.join('output', category) + '.yaml'
         # Converting list to dictionary
         movie_dict = {}
         for title in all_title_list:
             for rating in all_rating_list:
                 movie_dict[title] = rating
 
-        with open('output/topmovies.yaml', 'w') as file:
+        with open(filename, 'w') as file:
             doc = yaml.dump(movie_dict, file)
-        print('Yaml file saved: topmovies.yaml')
+        print('Yaml file saved:',filename)
 
-class TopMovie():
+class GetMovieRating():
     
     def get_title(scrape_data):
         title_list = []
@@ -51,18 +56,20 @@ class TopMovie():
 
 def main():
 
-    page = requests.get(URL)
-    soup = BeautifulSoup(page.text, 'html.parser')
-    results = soup.find(role="tabpanel")
-    
-    scrape_data = results.find_all('div', class_='ipc-poster-card')
+    for category in categories:
+        page = requests.get(URL + category)
+        print(URL+category)
+        soup = BeautifulSoup(page.text, 'html.parser')
+        results = soup.find(role = "tabpanel")
+        
+        scrape_data = results.find_all('div', class_='ipc-poster-card')
 
-    title_list = TopMovie.get_title(scrape_data)
-    rating_list = TopMovie.get_rating(scrape_data)
+        title_list = GetMovieRating.get_title(scrape_data)
+        rating_list = GetMovieRating.get_rating(scrape_data)
 
-    StoreResult.csvFile(title_list, rating_list)
-    StoreResult.jsonFile(title_list, rating_list)
-    StoreResult.yamlFile(title_list, rating_list)
+        StoreResult.csvFile(category, title_list, rating_list)
+        StoreResult.jsonFile(category, title_list, rating_list)
+        StoreResult.yamlFile(category, title_list, rating_list)
 
 if __name__ == "__main__":
     main()
