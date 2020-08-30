@@ -58,7 +58,6 @@ def main():
 
     for category in categories:
         page = requests.get(URL + category)
-        print(URL+category)
         soup = BeautifulSoup(page.text, 'html.parser')
         results = soup.find(role = "tabpanel")
         
