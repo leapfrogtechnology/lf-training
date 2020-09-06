@@ -1,10 +1,15 @@
+#python caches
 */__pycache__
 */*/__pycache__
 */*/*/__pycache__
-
 .pytest_cache
 
+#vscode configs
 .vscode
 
+#environment files
 .env
 */.env
+
+#python virtual environments
+*/*venv

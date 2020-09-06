@@ -1,0 +1,54 @@
+.primary-button {
+    padding: 8px;
+    text-transform: uppercase;
+    border: unset;
+    border-radius: 4px;
+    background-color: #0d87b8;
+    color: white;
+    box-shadow: 2px 2px 2px grey
+}
+
+.primary-button:focus {
+    outline: unset;
+}
+
+.primary-button:hover {
+    cursor: pointer;
+    background-color: #0b6c92;
+}
+
+.secondary-button {
+    padding: 8px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid #0d87b8;
+    background-color: white;
+    color: #0d87b8;
+    box-shadow: 2px 2px 2px grey
+}
+
+.secondary-button:focus {
+    outline: unset;
+}
+
+.secondary-button:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.small-button {
+    font-size: 0.75em;
+}
+
+.disabled-button {
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
+    color: white;
+}
+
+.disabled-button:hover {
+    cursor: not-allowed;
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
+    color: white;
+}

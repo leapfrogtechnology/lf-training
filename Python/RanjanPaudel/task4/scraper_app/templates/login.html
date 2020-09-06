@@ -1,0 +1,58 @@
+{% extends "index.html" %}
+{% block page_title %}
+<title>Scraper - Log In</title>
+{% endblock %}
+{% block style_content %}
+<link rel="stylesheet" href="./../static/form.css">
+<link rel="stylesheet" href="./../static/button.css">
+<link rel="stylesheet" href="./../static/link.css">
+{% endblock %}
+{% block content %}
+<div class="form-container">
+    <div class="container paper-class">
+        <h4 class="m-b-20">
+            Log In
+        </h4>
+        <form id="logInForm" action="{{ url_for('login_page') }}" method="POST" onsubmit="handleSubmit()">
+            <fieldset class="form-fieldset">
+                <label class="form-label" for="username">
+                    Username<span style="color: #f66255">*</span>
+                </label>
+                <input class="text-fields" name="username" id="username" type="text" placeholder="username"
+                    value="{{ form_data['username'] }}" required />
+                {% if error and error['username'] %}
+                <span class="form-error-message">{{ error['username'] }}</span>
+                {% endif %}
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <label class="form-label" for="userPassword">
+                    Password<span style="color: #f66255">*</span>
+                </label>
+                <input class="text-fields" name="userPassword" id="userPassword" type="password" placeholder="password"
+                    value="{{ form_data['userPassword'] }}" required />
+                {% if error and error['userPassword'] %}
+                <span class="form-error-message">{{ error['userPassword'] }}</span>
+                {% endif %}
+            </fieldset>
+            {% if error and error['other'] %}
+            <span class="form-error-message">{{ error['other'] }}</span>
+            {% endif %}
+            <input id="logInButton" class="primary-button small-button hori-center" type="submit" value="log in" />
+        </form>
+        <div class="container">
+            <span class="form-label">Don't have an account?</span> <a class="custom-link"
+                href="http://127.0.0.1:5000/signin">Sign in here.</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block script_content %}
+<script>
+    function handleSubmit() {
+        var buttonElem = document.getElementById('logInButton');
+        var currentClass = buttonElem.getAttribute('class');
+        buttonElem.setAttribute('class', currentClass + ' disabled-button');
+        buttonElem.disabled = true;
+    }
+</script>
+{% endblock %}
