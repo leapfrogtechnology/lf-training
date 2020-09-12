@@ -88,19 +88,16 @@ def get_movie_list(content, _type):
     soup = BeautifulSoup(content, 'html.parser')
 
     if not soup:
-        print(f'Could not generate the soup for {_type} list!')
-        raise Exception()
+        raise Exception(f'Could not generate the soup for {_type} list!')
 
     table_body = soup.find('tbody', {'class': 'lister-list'})
     if not table_body:
-        print(
+        raise Exception(
             f'Listing table not found in given URL: {imdb_base_url + search_map[_type]}.')
-        raise Exception()
 
     table_rows = table_body.find_all('tr')
     if not table_rows or len(table_rows) < 1:
-        print(f'No table rows found in table lister-list.')
-        raise Exception()
+        raise Exception(f'No table rows found in table lister-list.')
 
     movie_list = ''
     try:
@@ -109,11 +106,9 @@ def get_movie_list(content, _type):
         elif _type == 'most_popular_movies' or _type == 'most_popular_tv_shows':
             movie_list = get_most_popular_list(table_rows)
     except Exception as error:
-        print(f'Error genarating {_type} list: ', error)
-        raise Exception()
+        raise Exception(f'Error genarating {_type} list: ', error)
 
     if not movie_list or len(movie_list) < 1:
-        print(f'Could not prepare list for {_type}!')
-        raise Exception()
+        raise Exception(f'Could not prepare list for {_type}!')
 
     return movie_list

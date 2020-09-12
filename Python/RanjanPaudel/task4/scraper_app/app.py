@@ -55,7 +55,12 @@ def home_page(tab_name=None):
 
 @app.route('/scrape/<list_name>', methods=['GET'])
 def scrape_list(list_name=None):
-    print(list_name)
+    authentication_info = services.authenticate_user(
+        request.cookies.copy().to_dict(flat=True))
+
+    if authentication_info == 'token_invalid':
+        return redirect(url_for('login_page'))
+
     if list_name in tab_label_map.keys():
         try:
             services.scrape(list_name)
@@ -77,7 +82,7 @@ def refresh_tokens():
         new_tokens_info = services.refresh_tokens(
             request.cookies.copy().to_dict(flat=True))
 
-        if new_tokens_info in ['token_expired', 'token_invalid']:
+        if new_tokens_info in ['token_expired', 'token_invalid', 'token_refresh_error']:
             refresh_response = make_response(redirect(url_for('login_page')))
             refresh_response.set_cookie('access_token', '',
                                         path='/', httponly=True, max_age=0)

@@ -1,3 +1,6 @@
+import traceback
+
+
 class BadRequest(Exception):
     def __init__(self, key=None, message=None):
         super().__init__({
@@ -23,3 +26,7 @@ class NotFound(Exception):
             "message": message,
             f"{key}": message
         })
+
+
+def print_traceback(error):
+    traceback.print_exception(type(error), error, error.__traceback__)

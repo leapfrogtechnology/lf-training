@@ -1,7 +1,9 @@
 from sqlalchemy.exc import DBAPIError
 import traceback
 import requests
+from requests import RequestException
 from datetime import datetime
+from jwt import InvalidTokenError
 
 import db_models
 import errors
@@ -23,7 +25,7 @@ def create_new_user(user_data):
         result = db_models.create_user(new_user)
         return result
     except DBAPIError as error:
-        traceback.print_stack()
+        errors.print_traceback(error)
         raise errors.InternalError(
             key='other', message='Could not sign in now!')
 
@@ -32,8 +34,8 @@ def log_in_user(user_data):
     user = []
     try:
         user = db_models.find_user_by_username(user_data['username'])
-    except Exception as error:
-        traceback.print_stack()
+    except DBAPIError as error:
+        errors.print_traceback(error)
         raise errors.InternalError(
             key='other', message='Could not log in now!')
 
@@ -61,8 +63,12 @@ def log_in_user(user_data):
             "access_token": access_token,
             "refresh_token": refresh_token
         }
+    except DBAPIError as db_error:
+        errors.print_traceback(db_error)
+        raise errors.InternalError(
+            key='other', message='Could not log in now!')
     except Exception as error:
-        traceback.print_stack()
+        errors.print_traceback(error)
         raise errors.InternalError(
             key='other', message='Could not log in now!')
 
@@ -70,18 +76,24 @@ def log_in_user(user_data):
 def log_out_user(user_data):
     try:
         db_models.remove_token(user_data)
-    except Exception as error:
-        traceback.print_stack()
+    except DBAPIError as error:
+        errors.print_traceback(error)
 
 
 def get_token_info(cookies, _type):
-    if _type in cookies:
+    if _type not in cookies:
+        return {
+            "status": 'token_invalid'
+        }
+
+    try:
         return auth.decode_token(
             cookies[_type], _type)
-
-    return {
-        "status": 'token_invalid'
-    }
+    except InvalidTokenError as token_error:
+        errors.print_traceback(token_error)
+        return {
+            "status": 'token_invalid'
+        }
 
 
 def authenticate_user(cookies):
@@ -103,8 +115,8 @@ def authenticate_user(cookies):
             "status": token_status,
             "user": user[0]
         }
-    except Exception as error:
-        traceback.print_stack()
+    except DBAPIError as db_error:
+        errors.print_traceback(error)
         return 'token_invalid'
 
 
@@ -143,9 +155,12 @@ def refresh_tokens(cookies):
             "access_token": new_access_token,
             "refresh_token": new_refresh_token
         }
+    except DBAPIError as db_error:
+        errors.print_traceback(db_error)
+        return 'token_refresh_error'
     except Exception as error:
-        traceback.print_stack()
-        return 'token_invalid'
+        errors.print_traceback(error)
+        return 'token_refresh_error'
 
 
 def scrape(list_name):
@@ -158,7 +173,11 @@ def scrape(list_name):
         movie_list = scraper.get_movie_list(response_content, list_name)
         db_models.update_movie_list(list_name, movie_list)
         db_models.update_movie_meta(list_name)
-    except Exception as error:
+    except (RequestException, DBAPIError) as error:
+        errors.print_traceback(error)
+        raise Exception
+    except Exception as other_error:
+        errors.print_traceback(other_error)
         raise Exception
 
 
@@ -170,9 +189,8 @@ def get_scraped_list(list_name):
             "movie_list": movie_list[0],
             "last_updated": datetime.isoformat(movie_meta['last_updated'])
         }
-    except Exception as error:
-        print(f'Error fetching {list_name} from DB')
-        traceback.print_stack()
+    except DBAPIError as error:
+        errors.print_traceback(error)
         return {
             "movie_list": [],
             "last_updated": ''

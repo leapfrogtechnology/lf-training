@@ -21,28 +21,22 @@ def generate_token(user, _type):
         return jwt.encode(payload=jwt_payload,
                           key=config.JWT_SECRET, algorithm=config.JWT_ALGORITHM)
     except Exception as error:
-        raise Exception
+        raise Exception('Error genarating token.')
 
 
 def decode_token(token, _type):
-    try:
-        token_data = jwt.decode(jwt=token, key=config.JWT_SECRET,
-                                algorithms=config.JWT_ALGORITHM, verify=False)
-        if time.time() > token_data['exp']:
-            return {
-                "status": 'token_expired',
-                "payload": token_data
-            }
-
+    token_data = jwt.decode(jwt=token, key=config.JWT_SECRET,
+                            algorithms=config.JWT_ALGORITHM, verify=False)
+    if time.time() > token_data['exp']:
         return {
-            "status": 'valid',
+            "status": 'token_expired',
             "payload": token_data
         }
-    except InvalidTokenError as error:
-        traceback.print_stack()
-        return {
-            "status": 'token_invalid'
-        }
+
+    return {
+        "status": 'valid',
+        "payload": token_data
+    }
 
 
 def encrypt_password(password):
