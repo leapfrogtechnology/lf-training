@@ -22,7 +22,7 @@ DEFAULT_FILENAME = 'results'
 BASE_URL = 'https://hamrobazaar.com/'
 BASE_SEARCH_URL = BASE_URL + 'search.php'
 
-def mapTableData(table):
+def map_table_data(table):
     if table.find('td', attrs={'bgcolor':'#C6C6D9'}):
         td_data = table.find_all('td', attrs={'bgcolor': '#F2F4F9'})
         if not td_data:
@@ -36,7 +36,7 @@ def get_search_result_rows(data, max=DEFAULT_MAX):
     rows = []
     tables = data.find_all('table', attrs={'border':"0", 'width':"100%", 'cellspacing':"0", 'cellpadding':"0"})
     with Pool(5) as p:
-        data = p.map(mapTableData, (table for table in tables))
+        data = p.map(map_table_data, (table for table in tables))
     for record in data:
         if record and len(record) > 0:
             rows.append(record)
@@ -63,7 +63,6 @@ def store_data_in_db(json_data, header, filename=DEFAULT_FILENAME):
             for i in range(saved if saved < 50 else 50):
                 os.system(f'echo -ne "#"')
         
-    conn.close()
     print(f'\nSQLite database file: {OUTPUT_FOLDER}/{filename}.db    Table name: data')
 
     print(f'\nStoring data to postgreSQL database...')
