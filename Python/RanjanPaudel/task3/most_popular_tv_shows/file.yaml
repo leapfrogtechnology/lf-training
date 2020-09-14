@@ -1,0 +1,601 @@
+most_popular_tv_shows:
+- imdb_rating: '8.0'
+  popularity: NO CHANGE
+  position: '1'
+  pre_position: '1'
+  release_year: '2019'
+  title: The Umbrella Academy
+- imdb_rating: '7.6'
+  popularity: INCREASED
+  position: '2'
+  pre_position: '58'
+  release_year: '2020'
+  title: Lovecraft Country
+- imdb_rating: '8.2'
+  popularity: INCREASED
+  position: '3'
+  pre_position: '8'
+  release_year: '2016'
+  title: Lucifer
+- imdb_rating: '8.5'
+  popularity: DECREASED
+  position: '4'
+  pre_position: '1'
+  release_year: '2018'
+  title: Yellowstone
+- imdb_rating: '7.7'
+  popularity: INCREASED
+  position: '5'
+  pre_position: '112'
+  release_year: '2020'
+  title: Teenage Bounty Hunters
+- imdb_rating: '7.2'
+  popularity: INCREASED
+  position: '6'
+  pre_position: '76'
+  release_year: '2018'
+  title: Dirty John
+- imdb_rating: '8.7'
+  popularity: DECREASED
+  position: '7'
+  pre_position: '1'
+  release_year: '2019'
+  title: The Boys
+- imdb_rating: '9.3'
+  popularity: DECREASED
+  position: '8'
+  pre_position: '1'
+  release_year: '2011'
+  title: Game of Thrones
+- imdb_rating: '8.8'
+  popularity: DECREASED
+  position: '9'
+  pre_position: '5'
+  release_year: '2017'
+  title: Dark
+- imdb_rating: '8.4'
+  popularity: INCREASED
+  position: '10'
+  pre_position: '116'
+  release_year: '2012'
+  title: The Legend of Korra
+- imdb_rating: '8.5'
+  popularity: INCREASED
+  position: '11'
+  pre_position: '93'
+  release_year: '2020'
+  title: Ted Lasso
+- imdb_rating: '7.7'
+  popularity: DECREASED
+  position: '12'
+  pre_position: '3'
+  release_year: '2014'
+  title: The 100
+- imdb_rating: '8.9'
+  popularity: NO CHANGE
+  position: '13'
+  pre_position: '13'
+  release_year: '2005'
+  title: The Office
+- imdb_rating: '8.4'
+  popularity: DECREASED
+  position: '14'
+  pre_position: '2'
+  release_year: '2005'
+  title: Supernatural
+- imdb_rating: '8.2'
+  popularity: DECREASED
+  position: '15'
+  pre_position: '4'
+  release_year: '2013'
+  title: The Fall
+- imdb_rating: '8.6'
+  popularity: DECREASED
+  position: '16'
+  pre_position: '6'
+  release_year: '2011'
+  title: Shameless
+- imdb_rating: '7.6'
+  popularity: DECREASED
+  position: '17'
+  pre_position: '3'
+  release_year: '2005'
+  title: Grey's Anatomy
+- imdb_rating: '9.5'
+  popularity: DECREASED
+  position: '18'
+  pre_position: '3'
+  release_year: '2008'
+  title: Breaking Bad
+- imdb_rating: '7.6'
+  popularity: DECREASED
+  position: '19'
+  pre_position: '17'
+  release_year: '2020'
+  title: Perry Mason
+- imdb_rating: '8.1'
+  popularity: DECREASED
+  position: '20'
+  pre_position: '3'
+  release_year: '2005'
+  title: Criminal Minds
+- imdb_rating: '7.5'
+  popularity: DECREASED
+  position: '21'
+  pre_position: '13'
+  release_year: '2013'
+  title: Agents of S.H.I.E.L.D.
+- imdb_rating: '8.5'
+  popularity: DECREASED
+  position: '22'
+  pre_position: '4'
+  release_year: '2013'
+  title: Vikings
+- imdb_rating: '8.7'
+  popularity: INCREASED
+  position: '23'
+  pre_position: '46'
+  release_year: '2016'
+  title: The Crown
+- imdb_rating: '8.8'
+  popularity: DECREASED
+  position: '24'
+  pre_position: '7'
+  release_year: '2016'
+  title: Stranger Things
+- imdb_rating: '8.5'
+  popularity: DECREASED
+  position: '25'
+  pre_position: '1'
+  release_year: '2014'
+  title: Kingdom
+- imdb_rating: '8.4'
+  popularity: DECREASED
+  position: '26'
+  pre_position: '4'
+  release_year: '2015'
+  title: Schitt's Creek
+- imdb_rating: '8.5'
+  popularity: DECREASED
+  position: '27'
+  pre_position: '6'
+  release_year: '2009'
+  title: Community
+- imdb_rating: '8.2'
+  popularity: NO CHANGE
+  position: '28'
+  pre_position: '28'
+  release_year: '2010'
+  title: The Walking Dead
+- imdb_rating: '8.9'
+  popularity: DECREASED
+  position: '29'
+  pre_position: '6'
+  release_year: '2014'
+  title: Fargo
+- imdb_rating: '8.9'
+  popularity: DECREASED
+  position: '30'
+  pre_position: '3'
+  release_year: '1994'
+  title: Friends
+- imdb_rating: '8.8'
+  popularity: DECREASED
+  position: '31'
+  pre_position: '1'
+  release_year: '2013'
+  title: Peaky Blinders
+- imdb_rating: '8.4'
+  popularity: DECREASED
+  position: '32'
+  pre_position: '3'
+  release_year: '2017'
+  title: Ozark
+- imdb_rating: '8.4'
+  popularity: DECREASED
+  position: '33'
+  pre_position: '1'
+  release_year: '2009'
+  title: Modern Family
+- imdb_rating: '8.6'
+  popularity: NO CHANGE
+  position: '34'
+  pre_position: '34'
+  release_year: '2008'
+  title: Sons of Anarchy
+- imdb_rating: '8.4'
+  popularity: DECREASED
+  position: '35'
+  pre_position: '1'
+  release_year: '2017'
+  title: La Casa de Papel
+- imdb_rating: '7.7'
+  popularity: DECREASED
+  position: '36'
+  pre_position: '2'
+  release_year: '2011'
+  title: New Girl
+- imdb_rating: '9.2'
+  popularity: DECREASED
+  position: '37'
+  pre_position: '3'
+  release_year: '1999'
+  title: The Sopranos
+- imdb_rating: '8.1'
+  popularity: DECREASED
+  position: '38'
+  pre_position: '1'
+  release_year: '2007'
+  title: The Big Bang Theory
+- imdb_rating: '8.5'
+  popularity: DECREASED
+  position: '39'
+  pre_position: '2'
+  release_year: '2011'
+  title: Suits
+- imdb_rating: '8.4'
+  popularity: DECREASED
+  position: '40'
+  pre_position: '2'
+  release_year: '2019'
+  title: Euphoria
+- imdb_rating: '5.8'
+  popularity: DECREASED
+  position: '41'
+  pre_position: '21'
+  release_year: '2020'
+  title: Cursed
+- imdb_rating: '9.2'
+  popularity: DECREASED
+  position: '42'
+  pre_position: '13'
+  release_year: '2005'
+  title: 'Avatar: The Last Airbender'
+- imdb_rating: '8.4'
+  popularity: NO CHANGE
+  position: '43'
+  pre_position: '43'
+  release_year: '2013'
+  title: Brooklyn Nine-Nine
+- imdb_rating: '8.4'
+  popularity: NO CHANGE
+  position: '44'
+  pre_position: '44'
+  release_year: '2014'
+  title: Outlander
+- imdb_rating: '8.4'
+  popularity: NO CHANGE
+  position: '45'
+  pre_position: '45'
+  release_year: '2015'
+  title: The Last Kingdom
+- imdb_rating: '8.8'
+  popularity: DECREASED
+  position: '46'
+  pre_position: '3'
+  release_year: '2011'
+  title: Black Mirror
+- imdb_rating: '8.7'
+  popularity: DECREASED
+  position: '47'
+  pre_position: '1'
+  release_year: '2015'
+  title: Better Call Saul
+- imdb_rating: '8.0'
+  popularity: DECREASED
+  position: '48'
+  pre_position: '22'
+  release_year: '2019'
+  title: Doom Patrol
+- imdb_rating: '8.0'
+  popularity: DECREASED
+  position: '49'
+  pre_position: '1'
+  release_year: '2011'
+  title: American Horror Story
+- imdb_rating: '7.9'
+  popularity: DECREASED
+  position: '50'
+  pre_position: '13'
+  release_year: '2018'
+  title: Good Girls
+- imdb_rating: '8.7'
+  popularity: DECREASED
+  position: '51'
+  pre_position: '6'
+  release_year: '2019'
+  title: The Mandalorian
+- imdb_rating: '8.0'
+  popularity: DECREASED
+  position: '52'
+  pre_position: '2'
+  release_year: '2013'
+  title: The Blacklist
+- imdb_rating: '7.7'
+  popularity: DECREASED
+  position: '53'
+  pre_position: '3'
+  release_year: '2009'
+  title: The Vampire Diaries
+- imdb_rating: '8.5'
+  popularity: DECREASED
+  position: '54'
+  pre_position: '7'
+  release_year: '2017'
+  title: The Handmaid's Tale
+- imdb_rating: '7.8'
+  popularity: DECREASED
+  position: '55'
+  pre_position: '3'
+  release_year: '2003'
+  title: 'NCIS: Naval Criminal Investigative Service'
+- imdb_rating: '8.0'
+  popularity: DECREASED
+  position: '56'
+  pre_position: '5'
+  release_year: '1999'
+  title: 'Law & Order: Special Victims Unit'
+- imdb_rating: '8.7'
+  popularity: DECREASED
+  position: '57'
+  pre_position: '7'
+  release_year: '2012'
+  title: Line of Duty
+- imdb_rating: '8.5'
+  popularity: DECREASED
+  position: '58'
+  pre_position: '8'
+  release_year: '2018'
+  title: Succession
+- imdb_rating: '8.3'
+  popularity: NO CHANGE
+  position: '59'
+  pre_position: '59'
+  release_year: '2004'
+  title: Lost
+- imdb_rating: '6.7'
+  popularity: DECREASED
+  position: '60'
+  pre_position: '13'
+  release_year: '2009'
+  title: Glee
+- imdb_rating: '8.7'
+  popularity: DECREASED
+  position: '61'
+  pre_position: '28'
+  release_year: '2020'
+  title: Bandish Bandits
+- imdb_rating: '8.6'
+  popularity: NO CHANGE
+  position: '62'
+  pre_position: '62'
+  release_year: '2009'
+  title: Parks and Recreation
+- imdb_rating: '8.6'
+  popularity: DECREASED
+  position: '63'
+  pre_position: '8'
+  release_year: '2005'
+  title: Doctor Who
+- imdb_rating: '8.7'
+  popularity: DECREASED
+  position: '64'
+  pre_position: '4'
+  release_year: '2016'
+  title: Westworld
+- imdb_rating: '6.3'
+  popularity: DECREASED
+  position: '65'
+  pre_position: '42'
+  release_year: '2018'
+  title: The Rain
+- imdb_rating: '8.3'
+  popularity: DECREASED
+  position: '66'
+  pre_position: '12'
+  release_year: '2005'
+  title: How I Met Your Mother
+- imdb_rating: '8.6'
+  popularity: DECREASED
+  position: '67'
+  pre_position: '4'
+  release_year: '2012'
+  title: Endeavour
+- imdb_rating: '5.0'
+  popularity: DECREASED
+  position: '68'
+  pre_position: '57'
+  release_year: '2020'
+  title: The Fugitive
+- imdb_rating: '9.3'
+  popularity: DECREASED
+  position: '69'
+  pre_position: '6'
+  release_year: '2002'
+  title: The Wire
+- imdb_rating: '8.6'
+  popularity: NO CHANGE
+  position: '70'
+  pre_position: '70'
+  release_year: '1987'
+  title: 'Star Trek: The Next Generation'
+- imdb_rating: '8.5'
+  popularity: DECREASED
+  position: '71'
+  pre_position: '4'
+  release_year: '2013'
+  title: Hannibal
+- imdb_rating: '8.7'
+  popularity: DECREASED
+  position: '72'
+  pre_position: '1'
+  release_year: '2004'
+  title: House M.D.
+- imdb_rating: '8.2'
+  popularity: DECREASED
+  position: '73'
+  pre_position: '4'
+  release_year: '1997'
+  title: Buffy the Vampire Slayer
+- imdb_rating: '7.7'
+  popularity: DECREASED
+  position: '74'
+  pre_position: '9'
+  release_year: '2011'
+  title: Once Upon a Time
+- imdb_rating: '8.6'
+  popularity: DECREASED
+  position: '75'
+  pre_position: '5'
+  release_year: '2006'
+  title: Dexter
+- imdb_rating: '8.2'
+  popularity: DECREASED
+  position: '76'
+  pre_position: '4'
+  release_year: '2019'
+  title: The Witcher
+- imdb_rating: '8.1'
+  popularity: DECREASED
+  position: '77'
+  pre_position: '10'
+  release_year: '2014'
+  title: How to Get Away with Murder
+- imdb_rating: '8.3'
+  popularity: DECREASED
+  position: '78'
+  pre_position: '1'
+  release_year: '2011'
+  title: Homeland
+- imdb_rating: '8.1'
+  popularity: DECREASED
+  position: '79'
+  pre_position: '5'
+  release_year: '2000'
+  title: Gilmore Girls
+- imdb_rating: '7.7'
+  popularity: DECREASED
+  position: '80'
+  pre_position: '55'
+  release_year: '2018'
+  title: The Alienist
+- imdb_rating: '7.4'
+  popularity: INCREASED
+  position: '81'
+  pre_position: '162'
+  release_year: '2016'
+  title: 3%
+- imdb_rating: '7.9'
+  popularity: DECREASED
+  position: '82'
+  pre_position: '1'
+  release_year: '2017'
+  title: The Sinner
+- imdb_rating: '7.7'
+  popularity: DECREASED
+  position: '83'
+  pre_position: '12'
+  release_year: '2014'
+  title: The Flash
+- imdb_rating: '6.1'
+  popularity: DECREASED
+  position: '84'
+  pre_position: '19'
+  release_year: '2019'
+  title: Selling Sunset
+- imdb_rating: '8.3'
+  popularity: DECREASED
+  position: '85'
+  pre_position: '6'
+  release_year: '2005'
+  title: Prison Break
+- imdb_rating: '6.9'
+  popularity: DECREASED
+  position: '86'
+  pre_position: '11'
+  release_year: '2020'
+  title: Warrior Nun
+- imdb_rating: '7.8'
+  popularity: DECREASED
+  position: '87'
+  pre_position: '3'
+  release_year: '2005'
+  title: Bones
+- imdb_rating: '6.7'
+  popularity: INCREASED
+  position: '88'
+  pre_position: '1205'
+  release_year: '2020'
+  title: Biohackers
+- imdb_rating: '9.0'
+  popularity: DECREASED
+  position: '89'
+  pre_position: '5'
+  release_year: '2014'
+  title: True Detective
+- imdb_rating: '8.1'
+  popularity: DECREASED
+  position: '90'
+  pre_position: '4'
+  release_year: '2019'
+  title: Watchmen
+- imdb_rating: '9.2'
+  popularity: DECREASED
+  position: '91'
+  pre_position: '1'
+  release_year: '2013'
+  title: Rick and Morty
+- imdb_rating: '7.7'
+  popularity: DECREASED
+  position: '92'
+  pre_position: '6'
+  release_year: '1997'
+  title: Midsomer Murders
+- imdb_rating: NOT RATED
+  popularity: DECREASED
+  position: '93'
+  pre_position: '88'
+  release_year: '2020'
+  title: Raised by Wolves
+- imdb_rating: '9.1'
+  popularity: DECREASED
+  position: '94'
+  pre_position: '5'
+  release_year: '2010'
+  title: Sherlock
+- imdb_rating: '8.7'
+  popularity: DECREASED
+  position: '95'
+  pre_position: '4'
+  release_year: '2016'
+  title: This Is Us
+- imdb_rating: '8.7'
+  popularity: DECREASED
+  position: '96'
+  pre_position: '5'
+  release_year: '2010'
+  title: Downton Abbey
+- imdb_rating: '8.6'
+  popularity: DECREASED
+  position: '97'
+  pre_position: '3'
+  release_year: '2007'
+  title: Mad Men
+- imdb_rating: '7.5'
+  popularity: DECREASED
+  position: '98'
+  pre_position: '5'
+  release_year: '2012'
+  title: Arrow
+- imdb_rating: '8.8'
+  popularity: DECREASED
+  position: '99'
+  pre_position: '3'
+  release_year: '2005'
+  title: It's Always Sunny in Philadelphia
+- imdb_rating: NOT RATED
+  popularity: INCREASED
+  position: '100'
+  pre_position: '707'
+  release_year: '2020'
+  title: Utopia

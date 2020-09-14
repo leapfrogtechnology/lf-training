@@ -1,0 +1,1001 @@
+top_rated_movies:
+- imdb_rating: '9.2'
+  rank: '1'
+  release_year: '1994'
+  title: The Shawshank Redemption
+- imdb_rating: '9.1'
+  rank: '2'
+  release_year: '1972'
+  title: The Godfather
+- imdb_rating: '9.0'
+  rank: '3'
+  release_year: '1974'
+  title: 'The Godfather: Part II'
+- imdb_rating: '9.0'
+  rank: '4'
+  release_year: '2008'
+  title: The Dark Knight
+- imdb_rating: '8.9'
+  rank: '5'
+  release_year: '1957'
+  title: 12 Angry Men
+- imdb_rating: '8.9'
+  rank: '6'
+  release_year: '1993'
+  title: Schindler's List
+- imdb_rating: '8.9'
+  rank: '7'
+  release_year: '2003'
+  title: 'The Lord of the Rings: The Return of the King'
+- imdb_rating: '8.8'
+  rank: '8'
+  release_year: '1994'
+  title: Pulp Fiction
+- imdb_rating: '8.8'
+  rank: '9'
+  release_year: '1966'
+  title: Il buono, il brutto, il cattivo
+- imdb_rating: '8.8'
+  rank: '10'
+  release_year: '2001'
+  title: 'The Lord of the Rings: The Fellowship of the Ring'
+- imdb_rating: '8.8'
+  rank: '11'
+  release_year: '1999'
+  title: Fight Club
+- imdb_rating: '8.8'
+  rank: '12'
+  release_year: '1994'
+  title: Forrest Gump
+- imdb_rating: '8.7'
+  rank: '13'
+  release_year: '2010'
+  title: Inception
+- imdb_rating: '8.7'
+  rank: '14'
+  release_year: '1980'
+  title: 'Star Wars: Episode V - The Empire Strikes Back'
+- imdb_rating: '8.7'
+  rank: '15'
+  release_year: '2002'
+  title: 'The Lord of the Rings: The Two Towers'
+- imdb_rating: '8.6'
+  rank: '16'
+  release_year: '1999'
+  title: The Matrix
+- imdb_rating: '8.6'
+  rank: '17'
+  release_year: '1990'
+  title: Goodfellas
+- imdb_rating: '8.6'
+  rank: '18'
+  release_year: '1975'
+  title: One Flew Over the Cuckoo's Nest
+- imdb_rating: '8.6'
+  rank: '19'
+  release_year: '1954'
+  title: Shichinin no samurai
+- imdb_rating: '8.6'
+  rank: '20'
+  release_year: '1995'
+  title: Se7en
+- imdb_rating: '8.6'
+  rank: '21'
+  release_year: '1997'
+  title: "La vita \xE8 bella"
+- imdb_rating: '8.6'
+  rank: '22'
+  release_year: '2002'
+  title: Cidade de Deus
+- imdb_rating: '8.6'
+  rank: '23'
+  release_year: '1991'
+  title: The Silence of the Lambs
+- imdb_rating: '8.6'
+  rank: '24'
+  release_year: '1946'
+  title: It's a Wonderful Life
+- imdb_rating: '8.6'
+  rank: '25'
+  release_year: '1977'
+  title: Star Wars
+- imdb_rating: '8.5'
+  rank: '26'
+  release_year: '1998'
+  title: Saving Private Ryan
+- imdb_rating: '8.5'
+  rank: '27'
+  release_year: '2001'
+  title: Sen to Chihiro no kamikakushi
+- imdb_rating: '8.5'
+  rank: '28'
+  release_year: '1999'
+  title: The Green Mile
+- imdb_rating: '8.5'
+  rank: '29'
+  release_year: '2019'
+  title: Gisaengchung
+- imdb_rating: '8.5'
+  rank: '30'
+  release_year: '2014'
+  title: Interstellar
+- imdb_rating: '8.5'
+  rank: '31'
+  release_year: '2020'
+  title: Hamilton
+- imdb_rating: '8.5'
+  rank: '32'
+  release_year: '1994'
+  title: "L\xE9on"
+- imdb_rating: '8.5'
+  rank: '33'
+  release_year: '1995'
+  title: The Usual Suspects
+- imdb_rating: '8.5'
+  rank: '34'
+  release_year: '1962'
+  title: Seppuku
+- imdb_rating: '8.5'
+  rank: '35'
+  release_year: '1994'
+  title: The Lion King
+- imdb_rating: '8.5'
+  rank: '36'
+  release_year: '1985'
+  title: Back to the Future
+- imdb_rating: '8.5'
+  rank: '37'
+  release_year: '2002'
+  title: The Pianist
+- imdb_rating: '8.5'
+  rank: '38'
+  release_year: '1991'
+  title: 'Terminator 2: Judgment Day'
+- imdb_rating: '8.5'
+  rank: '39'
+  release_year: '1998'
+  title: American History X
+- imdb_rating: '8.5'
+  rank: '40'
+  release_year: '1936'
+  title: Modern Times
+- imdb_rating: '8.5'
+  rank: '41'
+  release_year: '1960'
+  title: Psycho
+- imdb_rating: '8.5'
+  rank: '42'
+  release_year: '2000'
+  title: Gladiator
+- imdb_rating: '8.5'
+  rank: '43'
+  release_year: '1931'
+  title: City Lights
+- imdb_rating: '8.5'
+  rank: '44'
+  release_year: '2006'
+  title: The Departed
+- imdb_rating: '8.5'
+  rank: '45'
+  release_year: '2011'
+  title: The Intouchables
+- imdb_rating: '8.5'
+  rank: '46'
+  release_year: '2014'
+  title: Whiplash
+- imdb_rating: '8.5'
+  rank: '47'
+  release_year: '2006'
+  title: The Prestige
+- imdb_rating: '8.5'
+  rank: '48'
+  release_year: '1988'
+  title: Hotaru no haka
+- imdb_rating: '8.5'
+  rank: '49'
+  release_year: '1968'
+  title: Once Upon a Time in the West
+- imdb_rating: '8.4'
+  rank: '50'
+  release_year: '1942'
+  title: Casablanca
+- imdb_rating: '8.4'
+  rank: '51'
+  release_year: '1988'
+  title: Nuovo Cinema Paradiso
+- imdb_rating: '8.4'
+  rank: '52'
+  release_year: '1954'
+  title: Rear Window
+- imdb_rating: '8.4'
+  rank: '53'
+  release_year: '1979'
+  title: Alien
+- imdb_rating: '8.4'
+  rank: '54'
+  release_year: '1979'
+  title: Apocalypse Now
+- imdb_rating: '8.4'
+  rank: '55'
+  release_year: '2000'
+  title: Memento
+- imdb_rating: '8.4'
+  rank: '56'
+  release_year: '1981'
+  title: Raiders of the Lost Ark
+- imdb_rating: '8.4'
+  rank: '57'
+  release_year: '1940'
+  title: The Great Dictator
+- imdb_rating: '8.4'
+  rank: '58'
+  release_year: '2019'
+  title: Joker
+- imdb_rating: '8.4'
+  rank: '59'
+  release_year: '2012'
+  title: Django Unchained
+- imdb_rating: '8.4'
+  rank: '60'
+  release_year: '2006'
+  title: The Lives of Others
+- imdb_rating: '8.4'
+  rank: '61'
+  release_year: '1957'
+  title: Paths of Glory
+- imdb_rating: '8.4'
+  rank: '62'
+  release_year: '1980'
+  title: The Shining
+- imdb_rating: '8.4'
+  rank: '63'
+  release_year: '2008'
+  title: "WALL\xB7E"
+- imdb_rating: '8.4'
+  rank: '64'
+  release_year: '2018'
+  title: 'Avengers: Infinity War'
+- imdb_rating: '8.4'
+  rank: '65'
+  release_year: '1950'
+  title: Sunset Blvd.
+- imdb_rating: '8.4'
+  rank: '66'
+  release_year: '2018'
+  title: 'Spider-Man: Into the Spider-Verse'
+- imdb_rating: '8.4'
+  rank: '67'
+  release_year: '1997'
+  title: Mononoke-hime
+- imdb_rating: '8.4'
+  rank: '68'
+  release_year: '1957'
+  title: Witness for the Prosecution
+- imdb_rating: '8.4'
+  rank: '69'
+  release_year: '1964'
+  title: 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb'
+- imdb_rating: '8.4'
+  rank: '70'
+  release_year: '2003'
+  title: Oldeuboi
+- imdb_rating: '8.3'
+  rank: '71'
+  release_year: '2012'
+  title: The Dark Knight Rises
+- imdb_rating: '8.3'
+  rank: '72'
+  release_year: '1984'
+  title: Once Upon a Time in America
+- imdb_rating: '8.3'
+  rank: '73'
+  release_year: '1986'
+  title: Aliens
+- imdb_rating: '8.3'
+  rank: '74'
+  release_year: '2019'
+  title: 'Avengers: Endgame'
+- imdb_rating: '8.3'
+  rank: '75'
+  release_year: '2016'
+  title: Kimi no na wa.
+- imdb_rating: '8.3'
+  rank: '76'
+  release_year: '2017'
+  title: Coco
+- imdb_rating: '8.3'
+  rank: '77'
+  release_year: '1999'
+  title: American Beauty
+- imdb_rating: '8.3'
+  rank: '78'
+  release_year: '1995'
+  title: Braveheart
+- imdb_rating: '8.3'
+  rank: '79'
+  release_year: '2009'
+  title: 3 Idiots
+- imdb_rating: '8.3'
+  rank: '80'
+  release_year: '1981'
+  title: Das Boot
+- imdb_rating: '8.3'
+  rank: '81'
+  release_year: '1995'
+  title: Toy Story
+- imdb_rating: '8.3'
+  rank: '82'
+  release_year: '1963'
+  title: Tengoku to jigoku
+- imdb_rating: '8.3'
+  rank: '83'
+  release_year: '1984'
+  title: Amadeus
+- imdb_rating: '8.3'
+  rank: '84'
+  release_year: '2007'
+  title: Taare Zameen Par
+- imdb_rating: '8.3'
+  rank: '85'
+  release_year: '1983'
+  title: 'Star Wars: Episode VI - Return of the Jedi'
+- imdb_rating: '8.3'
+  rank: '86'
+  release_year: '2009'
+  title: Inglourious Basterds
+- imdb_rating: '8.3'
+  rank: '87'
+  release_year: '1992'
+  title: Reservoir Dogs
+- imdb_rating: '8.3'
+  rank: '88'
+  release_year: '1997'
+  title: Good Will Hunting
+- imdb_rating: '8.3'
+  rank: '89'
+  release_year: '2018'
+  title: "Capharna\xFCm"
+- imdb_rating: '8.3'
+  rank: '90'
+  release_year: '1968'
+  title: '2001: A Space Odyssey'
+- imdb_rating: '8.3'
+  rank: '91'
+  release_year: '2000'
+  title: Requiem for a Dream
+- imdb_rating: '8.3'
+  rank: '92'
+  release_year: '1958'
+  title: Vertigo
+- imdb_rating: '8.3'
+  rank: '93'
+  release_year: '1931'
+  title: "M - Eine Stadt sucht einen M\xF6rder"
+- imdb_rating: '8.3'
+  rank: '94'
+  release_year: '2016'
+  title: Dangal
+- imdb_rating: '8.3'
+  rank: '95'
+  release_year: '2019'
+  title: '1917'
+- imdb_rating: '8.3'
+  rank: '96'
+  release_year: '2004'
+  title: Eternal Sunshine of the Spotless Mind
+- imdb_rating: '8.3'
+  rank: '97'
+  release_year: '2012'
+  title: Jagten
+- imdb_rating: '8.3'
+  rank: '98'
+  release_year: '1941'
+  title: Citizen Kane
+- imdb_rating: '8.2'
+  rank: '99'
+  release_year: '1987'
+  title: Full Metal Jacket
+- imdb_rating: '8.2'
+  rank: '100'
+  release_year: '1948'
+  title: Ladri di biciclette
+- imdb_rating: '8.2'
+  rank: '101'
+  release_year: '1921'
+  title: The Kid
+- imdb_rating: '8.2'
+  rank: '102'
+  release_year: '1971'
+  title: A Clockwork Orange
+- imdb_rating: '8.2'
+  rank: '103'
+  release_year: '1959'
+  title: North by Northwest
+- imdb_rating: '8.2'
+  rank: '104'
+  release_year: '2000'
+  title: Snatch
+- imdb_rating: '8.2'
+  rank: '105'
+  release_year: '1952'
+  title: Singin' in the Rain
+- imdb_rating: '8.2'
+  rank: '106'
+  release_year: '1983'
+  title: Scarface
+- imdb_rating: '8.2'
+  rank: '107'
+  release_year: '1976'
+  title: Taxi Driver
+- imdb_rating: '8.2'
+  rank: '108'
+  release_year: '2001'
+  title: "Am\xE9lie"
+- imdb_rating: '8.2'
+  rank: '109'
+  release_year: '1962'
+  title: Lawrence of Arabia
+- imdb_rating: '8.2'
+  rank: '110'
+  release_year: '1952'
+  title: Ikiru
+- imdb_rating: '8.2'
+  rank: '111'
+  release_year: '2010'
+  title: Toy Story 3
+- imdb_rating: '8.2'
+  rank: '112'
+  release_year: '1973'
+  title: The Sting
+- imdb_rating: '8.2'
+  rank: '113'
+  release_year: '1927'
+  title: Metropolis
+- imdb_rating: '8.2'
+  rank: '114'
+  release_year: '2011'
+  title: Jodaeiye Nader az Simin
+- imdb_rating: '8.2'
+  rank: '115'
+  release_year: '1965'
+  title: "Per qualche dollaro in pi\xF9"
+- imdb_rating: '8.2'
+  rank: '116'
+  release_year: '2010'
+  title: Incendies
+- imdb_rating: '8.2'
+  rank: '117'
+  release_year: '1960'
+  title: The Apartment
+- imdb_rating: '8.2'
+  rank: '118'
+  release_year: '1944'
+  title: Double Indemnity
+- imdb_rating: '8.2'
+  rank: '119'
+  release_year: '1962'
+  title: To Kill a Mockingbird
+- imdb_rating: '8.2'
+  rank: '120'
+  release_year: '1985'
+  title: Idi i smotri
+- imdb_rating: '8.2'
+  rank: '121'
+  release_year: '1989'
+  title: Indiana Jones and the Last Crusade
+- imdb_rating: '8.2'
+  rank: '122'
+  release_year: '2009'
+  title: Up
+- imdb_rating: '8.2'
+  rank: '123'
+  release_year: '1997'
+  title: L.A. Confidential
+- imdb_rating: '8.2'
+  rank: '124'
+  release_year: '1995'
+  title: Heat
+- imdb_rating: '8.2'
+  rank: '125'
+  release_year: '1975'
+  title: Monty Python and the Holy Grail
+- imdb_rating: '8.2'
+  rank: '126'
+  release_year: '1988'
+  title: Die Hard
+- imdb_rating: '8.2'
+  rank: '127'
+  release_year: '1950'
+  title: "Rash\xF4mon"
+- imdb_rating: '8.2'
+  rank: '128'
+  release_year: '1961'
+  title: "Y\xF4jinb\xF4"
+- imdb_rating: '8.2'
+  rank: '129'
+  release_year: '2005'
+  title: Batman Begins
+- imdb_rating: '8.2'
+  rank: '130'
+  release_year: '1971'
+  title: Anand
+- imdb_rating: '8.2'
+  rank: '131'
+  release_year: '2018'
+  title: Green Book
+- imdb_rating: '8.2'
+  rank: '132'
+  release_year: '2004'
+  title: Der Untergang
+- imdb_rating: '8.2'
+  rank: '133'
+  release_year: '1997'
+  title: Bacheha-Ye aseman
+- imdb_rating: '8.2'
+  rank: '134'
+  release_year: '1992'
+  title: Unforgiven
+- imdb_rating: '8.2'
+  rank: '135'
+  release_year: '1959'
+  title: Some Like It Hot
+- imdb_rating: '8.2'
+  rank: '136'
+  release_year: '1985'
+  title: Ran
+- imdb_rating: '8.2'
+  rank: '137'
+  release_year: '2004'
+  title: Hauru no ugoku shiro
+- imdb_rating: '8.2'
+  rank: '138'
+  release_year: '2001'
+  title: A Beautiful Mind
+- imdb_rating: '8.2'
+  rank: '139'
+  release_year: '1963'
+  title: The Great Escape
+- imdb_rating: '8.2'
+  rank: '140'
+  release_year: '1950'
+  title: All About Eve
+- imdb_rating: '8.2'
+  rank: '141'
+  release_year: '1995'
+  title: Casino
+- imdb_rating: '8.2'
+  rank: '142'
+  release_year: '2006'
+  title: Pan's Labyrinth
+- imdb_rating: '8.2'
+  rank: '143'
+  release_year: '2013'
+  title: The Wolf of Wall Street
+- imdb_rating: '8.2'
+  rank: '144'
+  release_year: '2009'
+  title: El secreto de sus ojos
+- imdb_rating: '8.1'
+  rank: '145'
+  release_year: '1998'
+  title: Lock, Stock and Two Smoking Barrels
+- imdb_rating: '8.1'
+  rank: '146'
+  release_year: '1988'
+  title: Tonari no Totoro
+- imdb_rating: '8.1'
+  rank: '147'
+  release_year: '1980'
+  title: Raging Bull
+- imdb_rating: '8.1'
+  rank: '148'
+  release_year: '2007'
+  title: There Will Be Blood
+- imdb_rating: '8.1'
+  rank: '149'
+  release_year: '1961'
+  title: Judgment at Nuremberg
+- imdb_rating: '8.1'
+  rank: '150'
+  release_year: '1948'
+  title: The Treasure of the Sierra Madre
+- imdb_rating: '8.1'
+  rank: '151'
+  release_year: '2017'
+  title: Three Billboards Outside Ebbing, Missouri
+- imdb_rating: '8.1'
+  rank: '152'
+  release_year: '2005'
+  title: Babam ve Oglum
+- imdb_rating: '8.1'
+  rank: '153'
+  release_year: '1954'
+  title: Dial M for Murder
+- imdb_rating: '8.1'
+  rank: '154'
+  release_year: '1925'
+  title: The Gold Rush
+- imdb_rating: '8.1'
+  rank: '155'
+  release_year: '1974'
+  title: Chinatown
+- imdb_rating: '8.1'
+  rank: '156'
+  release_year: '2005'
+  title: V for Vendetta
+- imdb_rating: '8.1'
+  rank: '157'
+  release_year: '2007'
+  title: No Country for Old Men
+- imdb_rating: '8.1'
+  rank: '158'
+  release_year: '2010'
+  title: Shutter Island
+- imdb_rating: '8.1'
+  rank: '159'
+  release_year: '1957'
+  title: Det sjunde inseglet
+- imdb_rating: '8.1'
+  rank: '160'
+  release_year: '2015'
+  title: Inside Out
+- imdb_rating: '8.1'
+  rank: '161'
+  release_year: '2011'
+  title: Warrior
+- imdb_rating: '8.1'
+  rank: '162'
+  release_year: '1980'
+  title: The Elephant Man
+- imdb_rating: '8.1'
+  rank: '163'
+  release_year: '1996'
+  title: Trainspotting
+- imdb_rating: '8.1'
+  rank: '164'
+  release_year: '1999'
+  title: The Sixth Sense
+- imdb_rating: '8.1'
+  rank: '165'
+  release_year: '1982'
+  title: The Thing
+- imdb_rating: '8.1'
+  rank: '166'
+  release_year: '1993'
+  title: Jurassic Park
+- imdb_rating: '8.1'
+  rank: '167'
+  release_year: '1939'
+  title: Gone with the Wind
+- imdb_rating: '8.1'
+  rank: '168'
+  release_year: '1957'
+  title: "Smultronst\xE4llet"
+- imdb_rating: '8.1'
+  rank: '169'
+  release_year: '1982'
+  title: Blade Runner
+- imdb_rating: '8.1'
+  rank: '170'
+  release_year: '2003'
+  title: Finding Nemo
+- imdb_rating: '8.1'
+  rank: '171'
+  release_year: '1998'
+  title: The Truman Show
+- imdb_rating: '8.1'
+  rank: '172'
+  release_year: '2015'
+  title: Room
+- imdb_rating: '8.1'
+  rank: '173'
+  release_year: '1957'
+  title: The Bridge on the River Kwai
+- imdb_rating: '8.1'
+  rank: '174'
+  release_year: '1979'
+  title: Stalker
+- imdb_rating: '8.1'
+  rank: '175'
+  release_year: '2003'
+  title: 'Kill Bill: Vol. 1'
+- imdb_rating: '8.1'
+  rank: '176'
+  release_year: '1996'
+  title: Fargo
+- imdb_rating: '8.1'
+  rank: '177'
+  release_year: '1953'
+  title: "T\xF4ky\xF4 monogatari"
+- imdb_rating: '8.1'
+  rank: '178'
+  release_year: '1949'
+  title: The Third Man
+- imdb_rating: '8.1'
+  rank: '179'
+  release_year: '1954'
+  title: On the Waterfront
+- imdb_rating: '8.1'
+  rank: '180'
+  release_year: '2008'
+  title: Gran Torino
+- imdb_rating: '8.1'
+  rank: '181'
+  release_year: '2003'
+  title: Salinui chueok
+- imdb_rating: '8.1'
+  rank: '182'
+  release_year: '1978'
+  title: The Deer Hunter
+- imdb_rating: '8.1'
+  rank: '183'
+  release_year: '2014'
+  title: Relatos salvajes
+- imdb_rating: '8.1'
+  rank: '184'
+  release_year: '2019'
+  title: Klaus
+- imdb_rating: '8.1'
+  rank: '185'
+  release_year: '2018'
+  title: Andhadhun
+- imdb_rating: '8.1'
+  rank: '186'
+  release_year: '1993'
+  title: In the Name of the Father
+- imdb_rating: '8.1'
+  rank: '187'
+  release_year: '2009'
+  title: Mary and Max
+- imdb_rating: '8.1'
+  rank: '188'
+  release_year: '2014'
+  title: Gone Girl
+- imdb_rating: '8.1'
+  rank: '189'
+  release_year: '2016'
+  title: Hacksaw Ridge
+- imdb_rating: '8.1'
+  rank: '190'
+  release_year: '2014'
+  title: The Grand Budapest Hotel
+- imdb_rating: '8.1'
+  rank: '191'
+  release_year: '1998'
+  title: The Big Lebowski
+- imdb_rating: '8.1'
+  rank: '192'
+  release_year: '1995'
+  title: Before Sunrise
+- imdb_rating: '8.1'
+  rank: '193'
+  release_year: '1996'
+  title: Eskiya
+- imdb_rating: '8.1'
+  rank: '194'
+  release_year: '2002'
+  title: Catch Me If You Can
+- imdb_rating: '8.1'
+  rank: '195'
+  release_year: '1966'
+  title: Persona
+- imdb_rating: '8.1'
+  rank: '196'
+  release_year: '1942'
+  title: To Be or Not to Be
+- imdb_rating: '8.1'
+  rank: '197'
+  release_year: '2019'
+  title: Ford v Ferrari
+- imdb_rating: '8.1'
+  rank: '198'
+  release_year: '1926'
+  title: The General
+- imdb_rating: '8.1'
+  rank: '199'
+  release_year: '2013'
+  title: Prisoners
+- imdb_rating: '8.1'
+  rank: '200'
+  release_year: '2010'
+  title: How to Train Your Dragon
+- imdb_rating: '8.1'
+  rank: '201'
+  release_year: '1924'
+  title: Sherlock Jr.
+- imdb_rating: '8.1'
+  rank: '202'
+  release_year: '1939'
+  title: Mr. Smith Goes to Washington
+- imdb_rating: '8.1'
+  rank: '203'
+  release_year: '2013'
+  title: 12 Years a Slave
+- imdb_rating: '8.1'
+  rank: '204'
+  release_year: '1975'
+  title: Barry Lyndon
+- imdb_rating: '8.1'
+  rank: '205'
+  release_year: '2015'
+  title: 'Mad Max: Fury Road'
+- imdb_rating: '8.1'
+  rank: '206'
+  release_year: '1976'
+  title: Network
+- imdb_rating: '8.1'
+  rank: '207'
+  release_year: '1986'
+  title: Stand by Me
+- imdb_rating: '8.1'
+  rank: '208'
+  release_year: '2004'
+  title: Million Dollar Baby
+- imdb_rating: '8.1'
+  rank: '209'
+  release_year: '1967'
+  title: Cool Hand Luke
+- imdb_rating: '8.1'
+  rank: '210'
+  release_year: '2009'
+  title: 'Hachi: A Dog''s Tale'
+- imdb_rating: '8.1'
+  rank: '211'
+  release_year: '2007'
+  title: Into the Wild
+- imdb_rating: '8.1'
+  rank: '212'
+  release_year: '1959'
+  title: Ben-Hur
+- imdb_rating: '8.1'
+  rank: '213'
+  release_year: '1989'
+  title: Dead Poets Society
+- imdb_rating: '8.1'
+  rank: '214'
+  release_year: '1953'
+  title: Le salaire de la peur
+- imdb_rating: '8.1'
+  rank: '215'
+  release_year: '1986'
+  title: Platoon
+- imdb_rating: '8.1'
+  rank: '216'
+  release_year: '2011'
+  title: 'Harry Potter and the Deathly Hallows: Part 2'
+- imdb_rating: '8.1'
+  rank: '217'
+  release_year: '1979'
+  title: Life of Brian
+- imdb_rating: '8.1'
+  rank: '218'
+  release_year: '2017'
+  title: Logan
+- imdb_rating: '8.0'
+  rank: '219'
+  release_year: '2013'
+  title: Rush
+- imdb_rating: '8.0'
+  rank: '220'
+  release_year: '1955'
+  title: Du rififi chez les hommes
+- imdb_rating: '8.0'
+  rank: '221'
+  release_year: '2016'
+  title: Ah-ga-ssi
+- imdb_rating: '8.0'
+  rank: '222'
+  release_year: '1959'
+  title: Les quatre cents coups
+- imdb_rating: '8.0'
+  rank: '223'
+  release_year: '1928'
+  title: La passion de Jeanne d'Arc
+- imdb_rating: '8.0'
+  rank: '224'
+  release_year: '1966'
+  title: Andrei Rublev
+- imdb_rating: '8.0'
+  rank: '225'
+  release_year: '2004'
+  title: Hotel Rwanda
+- imdb_rating: '8.0'
+  rank: '226'
+  release_year: '2015'
+  title: Spotlight
+- imdb_rating: '8.0'
+  rank: '227'
+  release_year: '2000'
+  title: Amores perros
+- imdb_rating: '8.0'
+  rank: '228'
+  release_year: '1984'
+  title: Kaze no tani no Naushika
+- imdb_rating: '8.0'
+  rank: '229'
+  release_year: '2006'
+  title: Rang De Basanti
+- imdb_rating: '8.0'
+  rank: '230'
+  release_year: '1976'
+  title: Rocky
+- imdb_rating: '8.0'
+  rank: '231'
+  release_year: '1995'
+  title: La haine
+- imdb_rating: '8.0'
+  rank: '232'
+  release_year: '2012'
+  title: Gangs of Wasseypur
+- imdb_rating: '8.0'
+  rank: '233'
+  release_year: '2001'
+  title: Monsters, Inc.
+- imdb_rating: '8.0'
+  rank: '234'
+  release_year: '1940'
+  title: Rebecca
+- imdb_rating: '8.0'
+  rank: '235'
+  release_year: '2019'
+  title: Portrait de la jeune fille en feu
+- imdb_rating: '8.0'
+  rank: '236'
+  release_year: '2004'
+  title: Before Sunset
+- imdb_rating: '8.0'
+  rank: '237'
+  release_year: '1934'
+  title: It Happened One Night
+- imdb_rating: '8.0'
+  rank: '238'
+  release_year: '2000'
+  title: Fa yeung nin wah
+- imdb_rating: '8.0'
+  rank: '239'
+  release_year: '1928'
+  title: The Circus
+- imdb_rating: '8.0'
+  rank: '240'
+  release_year: '1984'
+  title: Paris, Texas
+- imdb_rating: '8.0'
+  rank: '241'
+  release_year: '2015'
+  title: Drishyam
+- imdb_rating: '8.0'
+  rank: '242'
+  release_year: '2016'
+  title: Contratiempo
+- imdb_rating: '8.0'
+  rank: '243'
+  release_year: '2011'
+  title: The Help
+- imdb_rating: '8.0'
+  rank: '244'
+  release_year: '1987'
+  title: The Princess Bride
+- imdb_rating: '8.0'
+  rank: '245'
+  release_year: '1966'
+  title: La battaglia di Algeri
+- imdb_rating: '8.0'
+  rank: '246'
+  release_year: '1984'
+  title: The Terminator
+- imdb_rating: '8.0'
+  rank: '247'
+  release_year: '1997'
+  title: "Shin seiki Evangelion Gekij\xF4-ban: Air/Magokoro wo, kimi ni"
+- imdb_rating: '8.0'
+  rank: '248'
+  release_year: '1957'
+  title: "Kumonosu-j\xF4"
+- imdb_rating: '8.0'
+  rank: '249'
+  release_year: '1994'
+  title: 'Trois couleurs: Rouge'
+- imdb_rating: '8.0'
+  rank: '250'
+  release_year: '2016'
+  title: Koe no katachi
