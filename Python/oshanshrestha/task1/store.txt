@@ -1,0 +1,4 @@
+name,dob,subject,total,score,percentage
+Seema,1994-10-09 00:00:00,English,80.0,75.0,93.75
+Oshan,1994-10-09 00:00:00,Nepali,100.0,25.0,25.0
+Seema,1994-10-09 00:00:00,Nepali,80.0,75.0,93.75

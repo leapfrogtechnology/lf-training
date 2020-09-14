@@ -1,0 +1,84 @@
+{
+  "book_in_stock": [
+    {
+      "book_name": "A Light in the ...",
+      "cost": "\u00a351.77"
+    },
+    {
+      "book_name": "Tipping the Velvet",
+      "cost": "\u00a353.74"
+    },
+    {
+      "book_name": "Soumission",
+      "cost": "\u00a350.10"
+    },
+    {
+      "book_name": "Sharp Objects",
+      "cost": "\u00a347.82"
+    },
+    {
+      "book_name": "Sapiens: A Brief History ...",
+      "cost": "\u00a354.23"
+    },
+    {
+      "book_name": "The Requiem Red",
+      "cost": "\u00a322.65"
+    },
+    {
+      "book_name": "The Dirty Little Secrets ...",
+      "cost": "\u00a333.34"
+    },
+    {
+      "book_name": "The Coming Woman: A ...",
+      "cost": "\u00a317.93"
+    },
+    {
+      "book_name": "The Boys in the ...",
+      "cost": "\u00a322.60"
+    },
+    {
+      "book_name": "The Black Maria",
+      "cost": "\u00a352.15"
+    },
+    {
+      "book_name": "Starving Hearts (Triangular Trade ...",
+      "cost": "\u00a313.99"
+    },
+    {
+      "book_name": "Shakespeare's Sonnets",
+      "cost": "\u00a320.66"
+    },
+    {
+      "book_name": "Set Me Free",
+      "cost": "\u00a317.46"
+    },
+    {
+      "book_name": "Scott Pilgrim's Precious Little ...",
+      "cost": "\u00a352.29"
+    },
+    {
+      "book_name": "Rip it Up and ...",
+      "cost": "\u00a335.02"
+    },
+    {
+      "book_name": "Our Band Could Be ...",
+      "cost": "\u00a357.25"
+    },
+    {
+      "book_name": "Olio",
+      "cost": "\u00a323.88"
+    },
+    {
+      "book_name": "Mesaerion: The Best Science ...",
+      "cost": "\u00a337.59"
+    },
+    {
+      "book_name": "Libertarianism for Beginners",
+      "cost": "\u00a351.33"
+    },
+    {
+      "book_name": "It's Only the Himalayas",
+      "cost": "\u00a345.17"
+    }
+  ]
+}
