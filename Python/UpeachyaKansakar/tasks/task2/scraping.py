@@ -43,8 +43,8 @@ def main():
     time.sleep(3)
     # NOTE: looping to scrape all pages
     total_pages = get_total_pages(soup)
-    # NOTE: page 0 is already fetched so starting from 1
-    for pageNumber in range(1, total_pages-1):
+    # NOTE: page 1 is already fetched so starting from 2
+    for pageNumber in range(2, total_pages+1):
         url_with_pagination = URL + '/page/' + str(pageNumber)
         response = requests.get(url_with_pagination)
         soup = BeautifulSoup(response.text, 'html.parser') 
