@@ -15,6 +15,12 @@ fieldname = [
              'url_link'
              ]
 
+def write_empty_result_sets(empty_search_result_list):
+    filepath = get_filepath_name('empty_result.csv')
+    with open(filepath, mode='w') as wr:
+        writer = csv.writer(wr, quoting=csv.QUOTE_ALL)
+        writer.writerow(empty_search_result_list)
+
 def write_overall_result(contents):
     filepath = get_filepath_name(OUTPUT_FILE)
     op = CsvCreator(filepath, fieldname)

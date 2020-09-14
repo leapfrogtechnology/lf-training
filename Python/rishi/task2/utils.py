@@ -14,6 +14,8 @@ def format_price(data):
     return data
 
 def flatten_brand_as_key(acc, product_content):
+    if not 'brand' in product_content:
+        return acc
     if acc.get(product_content['brand']):
         value = acc.get(product_content['brand'])
         content = value
