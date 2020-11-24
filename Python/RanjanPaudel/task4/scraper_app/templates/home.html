@@ -175,17 +175,19 @@
 <script>
     function handleScrapeButtonClick(event) {
         var buttonElem = document.getElementById(event.target.id);
-        var currentClass = buttonElem.getAttribute('class');
-        buttonElem.setAttribute('class', currentClass + ' disabled-button');
-        buttonElem.disabled = true;
-        var newLink = document.createElement('a');
-        newLink.setAttribute('href', buttonElem.getAttribute('data-link'));
-        newLink.click();
+        if (buttonElem) {
+            var currentClass = buttonElem.getAttribute('class');
+            buttonElem.setAttribute('class', currentClass + ' disabled-button');
+            buttonElem.disabled = true;
+            var newLink = document.createElement('a');
+            newLink.setAttribute('href', buttonElem.getAttribute('data-link'));
+            newLink.click();
+        }
     }
     (function () {
         var timestampElem = document.getElementById('lastUpdatedTimestamp');
-        var timestamp = timestampElem.getAttribute('data-timestamp');
-        if (timestamp) {
+        if (timestampElem) {
+            var timestamp = timestampElem.getAttribute('data-timestamp');
             var localDateTime = new Date(timestamp + 'Z');
             var [day, month, date, year, time] = localDateTime.toString().split(' ');
             var [min, hour] = time.split(':');
