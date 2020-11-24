@@ -5,11 +5,11 @@ from requests import RequestException
 from datetime import datetime
 from jwt import InvalidTokenError
 
-import db_models
-import errors
-import auth
-import scraper
-from app_constants import imdb_base_url, search_map
+import scraper_app.db_models as db_models
+import scraper_app.errors as errors
+import scraper_app.auth as auth
+import scraper_app.scraper as scraper
+from scraper_app.app_constants import imdb_base_url, search_map
 
 
 def create_new_user(user_data):

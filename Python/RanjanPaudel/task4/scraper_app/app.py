@@ -2,10 +2,10 @@ from flask import Flask, request, Markup, render_template, redirect, url_for, ma
 from jinja2 import Environment, PackageLoader, select_autoescape
 from functools import wraps
 
-import config
-import validators
-import services
-from app_constants import (
+import scraper_app.config as config
+import scraper_app.validators as validators
+import scraper_app.services as services
+from scraper_app.app_constants import (
     empty_signin_form,
     empty_login_form,
     tab_list,

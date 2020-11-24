@@ -19,7 +19,7 @@ from sqlalchemy.engine import Connection
 from sqlalchemy.sql import Select, Delete, Update
 from datetime import datetime
 
-import db_config
+import scraper_app.db_config as db_config
 
 meta_data = MetaData()
 

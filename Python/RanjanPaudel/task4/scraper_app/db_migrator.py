@@ -1,8 +1,5 @@
 import argparse
 
-import db_models
-import db_config
-
 parser = argparse.ArgumentParser(description='MySQL migrator',
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
 parser.add_argument("--action",
@@ -12,6 +9,9 @@ parser.add_argument("--action",
 
 
 def main(arg_dict):
+    import scraper_app.db_config as db_config
+    import scraper_app.db_models as db_models
+
     if arg_dict['action'] == 'create':
         db_models.meta_data.create_all(db_config.engine)
 
@@ -30,5 +30,6 @@ def main(arg_dict):
 
 if __name__ == "__main__":
     opts = parser.parse_args()
+    dict_opts = opts.__dict__
 
-    main(opts.__dict__)
+    main(dict_opts)

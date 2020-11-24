@@ -4,7 +4,7 @@ from jwt import InvalidTokenError
 import time
 import traceback
 
-import config
+import scraper_app.config as config
 
 
 def generate_token(user, _type):
