@@ -1,7 +1,12 @@
+import os
 import argparse
 
 parser = argparse.ArgumentParser(description='MySQL migrator',
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
+parser.add_argument("--env",
+                    help='Choose the environment.',
+                    choices=("development", "test"),
+                    required=True)
 parser.add_argument("--action",
                     help='To create/drop all tables',
                     choices=("create", "drop"),
@@ -31,5 +36,7 @@ def main(arg_dict):
 if __name__ == "__main__":
     opts = parser.parse_args()
     dict_opts = opts.__dict__
+
+    os.environ['FLASK_ENV'] = str(dict_opts['env'])
 
     main(dict_opts)
