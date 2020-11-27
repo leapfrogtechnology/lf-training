@@ -44,7 +44,7 @@ def log_in_user(user_data):
             key='other', message='Account does not exist!')
 
     is_password_valid = auth.decrypt_password(
-        user[0]['password'], user_data['userPassword'])
+        user[0]['password'], user_data['password'])
     if not is_password_valid:
         raise errors.BadRequest(
             key='other', message='Username and password do not match')
@@ -199,10 +199,10 @@ def get_scraped_list(list_name):
 
 def map_to_users_db_model(user_data):
     return {
-        "full_name": user_data['userFullName'],
+        "full_name": user_data['full_name'],
         "username": user_data['username'],
-        "dob": user_data['userDOB'],
-        "password": auth.encrypt_password(user_data['userPasswordConfirm'])
+        "dob": user_data['dob'],
+        "password": auth.encrypt_password(user_data['confirm_password'])
     }
 
 

@@ -2,21 +2,21 @@ import datetime
 
 
 def validate_signin_form(signin_data):
-    if len(signin_data['userFullName']) < 3:
+    if len(signin_data['full_name']) < 3:
         return {
             "has_error": True,
             "error": {
-                "userFullName": "Full name length should be 3 to 100 characters"
+                "full_name": "Full name length should be 3 to 100 characters"
             }
         }
 
     try:
-        datetime.datetime.strptime(signin_data['userDOB'], '%Y-%m-%d')
+        datetime.datetime.strptime(signin_data['dob'], '%Y-%m-%d')
     except ValueError:
         return {
             "has_error": True,
             "error": {
-                "userDOB": "Date format should be YYYY-MM-DD"
+                "dob": "Date format should be YYYY-MM-DD"
             }
         }
 
@@ -28,19 +28,19 @@ def validate_signin_form(signin_data):
             }
         }
 
-    if len(signin_data['userPasswordCreate']) < 8:
+    if len(signin_data['new_password']) < 8:
         return {
             "has_error": True,
             "error": {
-                "userPasswordCreate": "Password length should be at least 8 characters"
+                "new_password": "Password length should be at least 8 characters"
             }
         }
 
-    if signin_data['userPasswordCreate'] != signin_data['userPasswordConfirm']:
+    if signin_data['new_password'] != signin_data['confirm_password']:
         return {
             "has_error": True,
             "error": {
-                "userPasswordConfirm": "Passwords do not match"
+                "confirm_password": "Passwords do not match"
             }
         }
 
@@ -58,11 +58,11 @@ def validate_login_form(login_data):
             }
         }
 
-    if len(login_data['userPassword']) < 1:
+    if len(login_data['password']) < 1:
         return {
             "has_error": True,
             "error": {
-                "userPassword": "Password is required"
+                "password": "Password is required"
             }
         }
 

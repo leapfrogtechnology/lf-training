@@ -1,14 +1,14 @@
 empty_signin_form = {
-    "userFullName": '',
+    "full_name": '',
     "username": '',
-    "userDOB": '',
-    "userPasswordCreate": '',
-    "userPasswordConfirm": ''
+    "dob": '',
+    "new_password": '',
+    "confirm_password": ''
 }
 
 empty_login_form = {
     "username": '',
-    "userPassword": ''
+    "password": ''
 }
 
 tab_list = [

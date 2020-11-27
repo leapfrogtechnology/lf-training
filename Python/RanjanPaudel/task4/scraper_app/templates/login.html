@@ -21,21 +21,21 @@
                 <input class="text-fields" name="username" id="username" type="text" placeholder="username"
                     value="{{ form_data['username'] }}" required />
                 {% if error and error['username'] %}
-                <span class="form-error-message">{{ error['username'] }}</span>
+                <span id="username_error" class="form-error-message">{{ error['username'] }}</span>
                 {% endif %}
             </fieldset>
             <fieldset class="form-fieldset">
-                <label class="form-label" for="userPassword">
+                <label class="form-label" for="password">
                     Password<span style="color: #f66255">*</span>
                 </label>
-                <input class="text-fields" name="userPassword" id="userPassword" type="password" placeholder="password"
-                    value="{{ form_data['userPassword'] }}" required />
-                {% if error and error['userPassword'] %}
-                <span class="form-error-message">{{ error['userPassword'] }}</span>
+                <input class="text-fields" name="password" id="password" type="password" placeholder="password"
+                    value="{{ form_data['password'] }}" required />
+                {% if error and error['password'] %}
+                <span id="password_error" class="form-error-message">{{ error['password'] }}</span>
                 {% endif %}
             </fieldset>
             {% if error and error['other'] %}
-            <span class="form-error-message">{{ error['other'] }}</span>
+            <span id="error_message" class="form-error-message">{{ error['other'] }}</span>
             {% endif %}
             <input id="logInButton" class="primary-button small-button hori-center" type="submit" value="log in" />
         </form>

@@ -138,7 +138,10 @@ def login_page():
 
             return response
         except Exception as error:
-            return render_template('login.html', form_data=request.form, error=error.args[0])
+            error_dict = error.args[0]
+            resp = make_response(render_template(
+                'login.html', form_data=request.form, error=error_dict), error_dict['code'])
+            return resp
 
 
 @app.route('/signin', methods=['GET', 'POST'])
@@ -160,7 +163,9 @@ def signin_page():
         validation = validators.validate_signin_form(request.form)
 
         if validation['has_error']:
-            return render_template('signin.html', form_data=request.form, error=validation['error'])
+            resp = make_response(render_template(
+                'signin.html', form_data=request.form, error=validation['error']), 400)
+            return resp
 
         try:
             services.create_new_user(
@@ -169,7 +174,10 @@ def signin_page():
 
             return redirect(url_for('login_page'))
         except Exception as error:
-            return render_template('signin.html', form_data=request.form, error=error.args[0])
+            error_dict = error.args[0]
+            resp = make_response(render_template(
+                'signin.html', form_data=request.form, error=error_dict), error_dict['code'])
+            return resp
 
 
 @app.route('/logout', methods=['GET'])
