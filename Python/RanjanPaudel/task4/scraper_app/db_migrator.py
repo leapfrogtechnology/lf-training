@@ -1,5 +1,9 @@
 import os
+import sys
 import argparse
+
+new_sys_path = os.path.abspath('./')
+sys.path.append(new_sys_path)
 
 parser = argparse.ArgumentParser(description='MySQL migrator',
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -28,6 +32,17 @@ def main(arg_dict):
                 {"list_name": 'most_popular_tv_shows'}
             ])
             db_models.conn.execute(inital_insert)
+
+        if arg_dict['env'] == 'test':
+            create_test_user = db_models.tables['users'].insert().values([
+                {
+                    'full_name': 'Test User',
+                    'username': 'testuser',
+                    'dob': '2000-01-01',
+                    'password': 'sha256$e5S53XFBq6$9f6111fd4e448fffe3f2d6ea84dce01d59f6b26de925a39ec7134f51397bb6c8'
+                }
+            ])
+            db_models.conn.execute(create_test_user)
 
     if arg_dict['action'] == 'drop':
         db_models.meta_data.drop_all(db_config.engine)
