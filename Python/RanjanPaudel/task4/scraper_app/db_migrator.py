@@ -33,7 +33,7 @@ def main(arg_dict):
             ])
             db_models.conn.execute(inital_insert)
 
-        if arg_dict['env'] == 'test':
+        if arg_dict['env'] == 'test':  # Create a test user if the environment is 'test'
             create_test_user = db_models.tables['users'].insert().values([
                 {
                     'full_name': 'Test User',
