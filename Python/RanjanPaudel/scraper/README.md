@@ -31,7 +31,7 @@ After the installation is complete, copy `.env.example` as `.env`:<br />
 $ cp .env.example .env
 ```
 Then set the parameters as per your requirement.<br />
-To run the migrations, first create database `scraper_app` for development and `scraper_app_test` from test. Then use the simple migrating CLI app:
+To run the migrations, first create database `scraper_app` for development and `scraper_app_test` for test. Then use the simple migrating CLI app:
 ```
 $ python3 scraper_app/db_migrator.py --env {test|development} --action {create|drop}
 ```
