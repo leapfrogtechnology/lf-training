@@ -50,3 +50,12 @@ This is used to perform the unit-tests in the `/tests` folder. For this you just
 $ pytest -s
 #'-s' to show the logs of test passings.
 ```
+## Some screenshots
+![Screenshot-1](./readme_pics/sc1.png)
+![Screenshot-2](./readme_pics/sc2.png)
+![Screenshot-3](./readme_pics/sc3.png)
+![Screenshot-4](./readme_pics/sc4.png)
+![Screenshot-5](./readme_pics/sc5.png)
+![Screenshot-6](./readme_pics/sc6.png)
+![Screenshot-7](./readme_pics/sc7.png)
+![Screenshot-8](./readme_pics/sc8.png)
