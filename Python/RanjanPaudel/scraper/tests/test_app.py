@@ -16,16 +16,6 @@ def client():
         yield client
 
 
-@pytest.fixture
-def authorized_client():
-    from scraper_app import app
-
-    app.app.config['TESTING'] = True
-
-    with app.app.test_client() as client:
-        yield client
-
-
 def test_empty_path_redirection_to_home(client):
     res = client.get('/')
 
