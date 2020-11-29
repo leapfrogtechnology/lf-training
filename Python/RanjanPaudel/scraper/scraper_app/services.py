@@ -185,9 +185,13 @@ def get_scraped_list(list_name):
     try:
         movie_list = db_models.find_all_movies(list_name),
         movie_meta = db_models.find_movie_meta(list_name)
+        last_updated = ''
+        if movie_meta['last_updated']:
+            last_updated = datetime.isoformat(movie_meta['last_updated'])
+
         return {
             "movie_list": movie_list[0],
-            "last_updated": datetime.isoformat(movie_meta['last_updated'])
+            "last_updated": last_updated
         }
     except DBAPIError as error:
         errors.print_traceback(error)
