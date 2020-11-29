@@ -34,10 +34,10 @@ def log_in_user(user_data):
     user = []
     try:
         user = db_models.find_user_by_username(user_data['username'])
-    except DBAPIError as error:
+    except (DBAPIError, Exception) as error:
         errors.print_traceback(error)
         raise errors.InternalError(
-            key='other', message='Could not log in now!')
+            key='other', message='Could not log in now!')       
 
     if len(user) != 1:
         raise errors.NotFound(
