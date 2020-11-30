@@ -1,0 +1,198 @@
+{% extends "index.html" %}
+{% if user_is_logged_in and user %}
+{% block page_title %}
+<title>Scraper - Home</title>
+{% endblock %}
+
+{% block style_content %}
+<link rel="stylesheet" href="./../static/user_logo.css">
+<link rel="stylesheet" href="./../static/link.css">
+<link rel="stylesheet" href="./../static/home.css">
+<link rel="stylesheet" href="./../static/button.css">
+{% endblock %}
+
+{% block header_content %}
+<div id="userContainer">
+    <h4 class="p-l-r-10 app-white">
+        {{user['full_name']}}
+    </h4>
+    <div class="app-user-icon">
+        <img src="./../static/user-solid.svg" alt="logout" height="100%">
+    </div>
+    <a title="Log Out" class="logout-button button-link m-l-20" href="{{url_for('logout_page')}}">
+        <img src="./../static/power.svg" alt="logout" width="100%">
+    </a>
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="scraperHome">
+    <div class="container">
+        <div class="row">
+            <div class="col col-3">
+                <div class="card-class p-16 sticky-box">
+                    <h4 class="m-b-20">
+                        Categories
+                    </h4>
+                    <div class="tab-list">
+                        <ul class="custom-list">
+                            {% for tab in tab_list %}
+                            <li>
+                                <a class="tab-link {% if selected_tab==tab['value'] %}tab-link-selected {%endif%}p-4"
+                                    href="/home/{{tab['value']}}">
+                                    {{tab['label']}}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-9">
+                {% if not selected_tab %}
+                <h4>
+                    Select a category!
+                </h4>
+                <hr>
+                {% endif %}
+                {% if selected_tab %}
+                <div class="row p-4" style="align-items: center;">
+                    <h4>
+                        IMDb's {{scraped_list['movie_list']|length}} {{tab_label_map[selected_tab]}}
+                    </h4>
+                    {% if scraped_list['movie_list'] and scraped_list['movie_list']|length %}
+                    <button id="scrapeButtonA" data-link="/scrape/{{selected_tab}}"
+                        class="secondary-button small-button m-l-20" onclick="handleScrapeButtonClick(event)">
+                        Update
+                    </button>
+                    {% endif %}
+                    {% if not scraped_list['movie_list'] or not scraped_list['movie_list']|length %}
+                    <button id="scrapeButtonB" data-link="/scrape/{{selected_tab}}"
+                        class="primary-button small-button m-l-20" onclick="handleScrapeButtonClick(event)">
+                        Scrape
+                    </button>
+                    {% endif %}
+                    <span id="lastUpdatedTimestamp" class="caption-text m-l-20"
+                        data-timestamp="{{scraped_list['last_updated']}}">
+                    </span>
+                </div>
+                <hr>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            {% for column in list_table_column_keys[selected_tab] %}
+                            <th class="table-header-cell p-4 {{list_table_columns[selected_tab][column]['class']}}">
+                                {{list_table_columns[selected_tab][column]['label']}}
+                            </th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    {% if selected_tab == 'top_rated_movies' or selected_tab == 'top_rated_tv_shows' %}
+                    <tbody>
+                        {% for row_item in scraped_list['movie_list'] %}
+                        <tr class="alter-color-tr">
+                            <td class="p-4 line-ht-0">
+                                <img src="{{row_item['img_link']}}" onerror="this.src = './../static/movie_alt.png'"
+                                    alt="{{row_item['title']}}">
+                            </td>
+                            <td class="p-4 {{list_table_columns[selected_tab]['title']['class']}}">
+                                <a class="custom-link" href="{{row_item['imdb_link']}}"
+                                    target="_blank">{{row_item['title']}}</a>
+                            </td>
+                            <td class="p-4 table-content-cell {{list_table_columns[selected_tab]['rank']['class']}}">
+                                <strong>{{row_item['rank']}}</strong>
+                            </td>
+                            <td
+                                class="p-4 table-content-cell {{list_table_columns[selected_tab]['release_year']['class']}}">
+                                {{row_item['release_year']}}
+                            </td>
+                            <td
+                                class="p-4 table-content-cell {{list_table_columns[selected_tab]['imdb_rating']['class']}}">
+                                <strong>{{row_item['imdb_rating']}}</strong>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    {% endif %}
+                    {% if selected_tab == 'most_popular_movies' or selected_tab == 'most_popular_tv_shows' %}
+                    <tbody>
+                        {% for row_item in scraped_list['movie_list'] %}
+                        <tr class="alter-color-tr">
+                            <td class="p-4 line-ht-0">
+                                <img src="{{row_item['img_link']}}" onerror="this.src = './../static/movie_alt.png'"
+                                    alt="{{row_item['title']}}">
+                            </td>
+                            <td class="p-4 {{list_table_columns[selected_tab]['title']['class']}}">
+                                <a class="custom-link" href="{{row_item['imdb_link']}}"
+                                    target="_blank">{{row_item['title']}}</a>
+                            </td>
+                            <td
+                                class="p-4 table-content-cell {{list_table_columns[selected_tab]['release_year']['class']}}">
+                                {{row_item['release_year']}}
+                            </td>
+                            <td
+                                class="p-4 table-content-cell {{list_table_columns[selected_tab]['imdb_rating']['class']}}">
+                                <strong>{{row_item['imdb_rating']}}</strong>
+                            </td>
+                            <td title="Popularity: {{row_item['popularity']}}"
+                                class="p-4 table-content-cell {{list_table_columns[selected_tab]['position']['class']}}">
+                                <span
+                                    class="{{list_table_columns[selected_tab]['position']['popularity'][row_item['popularity']]}}">
+                                    <strong>{{row_item['position']}}</strong>
+                                </span>
+                                <span>
+                                    ({{row_item['pre_position']}})
+                                </span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    {% endif %}
+                </table>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer_content %}
+<footer id="appFooter">
+    <div>
+        Visit&ensp;
+        <span>
+            <a class="custom-link" href="http://imdb.com" target="_blank">
+                <img src="./../static/imdb.svg" alt="imdb" style="margin-bottom: -2px;">
+            </a>
+        </span>
+        &ensp;for more.
+    </div>
+</footer>
+{% endblock %}
+{% endif %}
+
+{% block script_content %}
+<script>
+    function handleScrapeButtonClick(event) {
+        var buttonElem = document.getElementById(event.target.id);
+        if (buttonElem) {
+            var currentClass = buttonElem.getAttribute('class');
+            buttonElem.setAttribute('class', currentClass + ' disabled-button');
+            buttonElem.disabled = true;
+            var newLink = document.createElement('a');
+            newLink.setAttribute('href', buttonElem.getAttribute('data-link'));
+            newLink.click();
+        }
+    }
+    (function () {
+        var timestampElem = document.getElementById('lastUpdatedTimestamp');
+        if (timestampElem) {
+            var timestamp = timestampElem.getAttribute('data-timestamp');
+            var localDateTime = new Date(timestamp + 'Z');
+            var [day, month, date, year, time] = localDateTime.toString().split(' ');
+            var [min, hour] = time.split(':');
+            timestampElem.innerHTML = 'Last updated on ' + day + ', ' + month + ' ' + date + ' ' + year + ' at ' + [min, hour].join(':');
+        }
+    })();
+</script>
+{% endblock %}

@@ -1,0 +1,16 @@
+.custom-link {
+    color: #0d87b8;
+    font-size: 0.75em;
+    text-decoration: unset;
+}
+
+.custom-link:hover {
+    color: #0b6c92;
+    text-decoration: underline;
+}
+
+.button-link {
+    display: block;
+    color: unset;
+    text-decoration: unset;
+}

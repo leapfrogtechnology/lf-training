@@ -1,0 +1,22 @@
+.app-user-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.logout-button {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    background-color: #c04c4c;
+    border-radius: 50%;
+}
+
+.logout-button:focus {
+    outline: unset;
+}
+
+.logout-button:hover {
+    cursor: pointer;
+    background-color: #b33e3e;
+    box-shadow: 2px 2px 2px;
+}

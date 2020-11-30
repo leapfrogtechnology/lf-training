@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block page_title %}{% endblock %}
+    <link rel="stylesheet" href="./../static/layout.css">
+    <link rel="stylesheet" href="./../static/main.css">
+    <link rel="stylesheet" href="./../static/common.css">
+    {% block style_content %}{% endblock %}
+    <link rel="shortcut icon" href="./../static/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="appHeader">
+        <div id="logoContainer">
+            <div class="app-logo">
+                <img src="./../static/scraper_app_logo.png" width="100%" style="border-radius: 10%;">
+            </div>
+            <h2 class="p-l-r-10 app-white">
+                Scraper App
+            </h2>
+        </div>
+        {% block header_content %}{% endblock %}
+    </header>
+    <main id="mainContainer">
+        {% with messages=get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="notification-container">
+            {% for category, message in messages %}
+            <div class="notification {{category}}-notification" role="alert">
+                <span>
+                    {{message}}
+                </span>
+                <button class="close-alert-button" type="button" data-dismiss="alert"
+                    onclick="closeNotification(event)">
+                    &times;
+                </button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+    {% block footer_content %}
+    {% endblock %}
+    {% with messages=get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <script>
+        function closeNotification(event) {
+            var buttonElem = event.target;
+            buttonElem.parentElement.remove();
+        }
+    </script>
+    {% endif %}
+    {% endwith %}
+    {% block script_content %}
+    {% endblock %}
+</body>
+
+</html>

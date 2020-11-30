@@ -1,0 +1,53 @@
+.tab-link {
+    display: block;
+    text-decoration: unset;
+    color: #0d87b8;
+    border-bottom: 1px solid #afafaf;
+}
+
+.tab-link:hover {
+    color: white;
+    background-color: #0d87b8;
+}
+
+.tab-link-selected {
+    color: white;
+    background-color: #0d87b8;
+}
+
+.table-header-cell {
+    background-color: #e9e9e9;
+    color: #555555
+}
+
+.table-content-cell {
+    font-size: 0.75em;
+}
+
+.alter-color-tr:nth-child(even) {
+    background-color: #f3f3f3
+}
+
+.algn-lft {
+    text-align: left;
+}
+
+.algn-rht {
+    text-align: right;
+}
+
+.line-ht-0 {
+    line-height: 0;
+}
+
+.color-green {
+    color: green;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-orange {
+    color: orange;
+}

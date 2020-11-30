@@ -1,0 +1,90 @@
+{% extends "index.html" %}
+{% block page_title %}
+<title>Scraper - Sign In</title>
+{% endblock %}
+{% block style_content %}
+<link rel="stylesheet" href="./../static/form.css">
+<link rel="stylesheet" href="./../static/button.css">
+<link rel="stylesheet" href="./../static/link.css">
+{% endblock %}
+{% block content %}
+<div class="form-container">
+    <div class="container paper-class">
+        <h4 class="m-b-20">
+            Sign In
+        </h4>
+        <form id="signInForm" action="{{ url_for('signin_page') }}" method="POST" onsubmit="handleSubmit()">
+            <fieldset class="form-fieldset">
+                <label class="form-label" for="full_name" aria-required="true">
+                    Full Name<span style="color: #f66255">*</span>
+                </label>
+                <input class="text-fields" name="full_name" id="full_name" type="text" placeholder="full name"
+                    value="{{ form_data['full_name'] }}" required />
+                {% if error and error['full_name'] %}
+                <span id="full_name_error" class="form-error-message">{{ error['full_name'] }}</span>
+                {% endif %}
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <label class="form-label" for="dob" aria-required="true">
+                    Date of Birth<span style="color: #f66255">*</span>
+                </label>
+                <input class="text-fields" name="dob" id="dob" type="date" value="{{ form_data['dob'] }}" required />
+                {% if error and error['dob'] %}
+                <span id="dob_error" class="form-error-message">{{ error['dob'] }}</span>
+                {% endif %}
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <label class="form-label" for="username" aria-required="true">
+                    Choose Username<span style="color: #f66255">*</span>
+                </label>
+                <input class="text-fields" name="username" id="username" minlength="6" maxlength="100"
+                    placeholder="username (unique)" value="{{ form_data['username'] }}" required />
+                {% if error and error['username'] %}
+                <span id="username_error" class="form-error-message">{{ error['username'] }}</span>
+                {% endif %}
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <label class="form-label" for="new_password" aria-required="true">
+                    Create Password<span style="color: #f66255">*</span>
+                </label>
+                <input class="text-fields" name="new_password" id="new_password" type="password"
+                    placeholder="Enter new password" minlength="8" maxlength="60"
+                    value="{{ form_data['new_password'] }}" required />
+                {% if error and error['new_password'] %}
+                <span id="new_password_error" class="form-error-message">{{ error['new_password'] }}</span>
+                {% endif %}
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <label class="form-label" for="confirm_password" aria-required="true">
+                    Confirm Password<span style="color: #f66255">*</span>
+                </label>
+                <input class="text-fields" name="confirm_password" id="confirm_password" type="password"
+                    placeholder="Re-enter the new password" minlength="8" value="{{ form_data['confirm_password'] }}"
+                    required />
+                {% if error and error['confirm_password'] %}
+                <span id="confirm_password_error" class="form-error-message">{{ error['confirm_password'] }}</span>
+                {% endif %}
+            </fieldset>
+            <input id="signInButton" class="primary-button small-button hori-center m-b-10" type="submit"
+                value="sign in" />
+            {% if error and error['other'] %}
+            <span class="form-error-message hori-center">{{ error['other'] }}</span>
+            {% endif %}
+        </form>
+        <div class="container">
+            <span class="form-label">Already have an account?</span> <a class="custom-link"
+                href="{{url_for('login_page')}}">Log in here.</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block script_content %}
+<script>
+    function handleSubmit() {
+        var buttonElem = document.getElementById('signInButton');
+        var currentClass = buttonElem.getAttribute('class');
+        buttonElem.setAttribute('class', currentClass + ' disabled-button');
+        buttonElem.disabled = true;
+    }
+</script>
+{% endblock %}

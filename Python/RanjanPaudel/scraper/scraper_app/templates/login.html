@@ -1,0 +1,58 @@
+{% extends "index.html" %}
+{% block page_title %}
+<title>Scraper - Log In</title>
+{% endblock %}
+{% block style_content %}
+<link rel="stylesheet" href="./../static/form.css">
+<link rel="stylesheet" href="./../static/button.css">
+<link rel="stylesheet" href="./../static/link.css">
+{% endblock %}
+{% block content %}
+<div class="form-container">
+    <div class="container paper-class">
+        <h4 class="m-b-20">
+            Log In
+        </h4>
+        <form id="logInForm" action="{{ url_for('login_page') }}" method="POST" onsubmit="handleSubmit()">
+            <fieldset class="form-fieldset">
+                <label class="form-label" for="username">
+                    Username<span style="color: #f66255">*</span>
+                </label>
+                <input class="text-fields" name="username" id="username" type="text" placeholder="username"
+                    value="{{ form_data['username'] }}" required />
+                {% if error and error['username'] %}
+                <span id="username_error" class="form-error-message">{{ error['username'] }}</span>
+                {% endif %}
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <label class="form-label" for="password">
+                    Password<span style="color: #f66255">*</span>
+                </label>
+                <input class="text-fields" name="password" id="password" type="password" placeholder="password"
+                    value="{{ form_data['password'] }}" required />
+                {% if error and error['password'] %}
+                <span id="password_error" class="form-error-message">{{ error['password'] }}</span>
+                {% endif %}
+            </fieldset>
+            {% if error and error['other'] %}
+            <span id="error_message" class="form-error-message">{{ error['other'] }}</span>
+            {% endif %}
+            <input id="logInButton" class="primary-button small-button hori-center" type="submit" value="log in" />
+        </form>
+        <div class="container">
+            <span class="form-label">Don't have an account?</span> <a class="custom-link"
+                href="{{url_for('signin_page')}}">Sign in here.</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block script_content %}
+<script>
+    function handleSubmit() {
+        var buttonElem = document.getElementById('logInButton');
+        var currentClass = buttonElem.getAttribute('class');
+        buttonElem.setAttribute('class', currentClass + ' disabled-button');
+        buttonElem.disabled = true;
+    }
+</script>
+{% endblock %}

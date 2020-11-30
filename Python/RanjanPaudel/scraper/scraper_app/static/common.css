@@ -1,0 +1,151 @@
+ul {
+    list-style-type: none;
+}
+
+table {
+    border-spacing: 0;
+}
+
+.container {
+    padding: 8px;
+    width: calc(100% - 16px);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.col-3 {
+    width: 33.33%;
+}
+
+.col-9 {
+    width: 66.67%;
+}
+
+.paper-class {
+    box-shadow: 0px 3px 6px grey, 0px 1px 6px grey;
+    border-radius: 8px;
+}
+
+.card-class {
+    box-shadow: 0px 0px 2px grey;
+}
+
+.hori-center {
+    display: block;
+    margin: 0px auto;
+}
+
+.notification-container {
+    position: sticky;
+    top: 0;
+    left: 10%;
+    z-index: 8888;
+    width: 80%;
+    text-align: center;
+}
+
+.notification {
+    font-size: 0.75em;
+    padding: 8px;
+    margin: 4px;
+    border: 1px solid #00000020;
+    border-radius: 4px;
+    position: relative;
+}
+
+.notification .close-alert-button {
+    position: absolute;
+    top: calc(50% - 0.75em);
+    right: 0;
+    font-size: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    border-radius: 50%;
+}
+
+.notification .close-alert-button:hover {
+    cursor: pointer;
+    background-color: #00000020;
+}
+
+.notification .close-alert-button:focus {
+    outline: none;
+}
+
+.success-notification {
+    background-color: #c1f9b7;
+    color: #005302;
+}
+
+.error-notification {
+    background-color: #f9b7b7;
+    color: #7c0000
+}
+
+.warn-notification {
+    background-color: #f9e5b7;
+    color: #836d00;
+}
+
+.info-notification {
+    background-color: #b7cbf9;
+    color: #002679
+}
+
+.m-8 {
+    margin: 8px;
+}
+
+.m-l-20 {
+    margin-left: 20px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.p-4 {
+    padding: 4px;
+}
+
+.p-16 {
+    padding: 16px;
+}
+
+.p-l-r-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.app-white {
+    color: #f7e6dd;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 8px;
+    left: 0;
+    z-index: 100;
+}
+
+.caption-text {
+    font-size: 0.6em;
+    color: #5c5c5c
+}
